@@ -1,0 +1,100 @@
+.stage {
+    position: absolute;
+    width: 56%;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: -10%;
+    bottom: 0;
+    margin: auto;
+
+}
+
+
+.status {
+    position: absolute;
+    font-family: monospace;
+    font-size: 24px;
+    width: 60%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 90%;
+    bottom: 0;
+    margin: auto;
+
+}
+
+
+.lcell {
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    border:solid 6px black;
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 48px;
+    margin-right: 15px;
+}
+
+.lcell:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+.scell {
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border:solid 3px black;
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.unjust
+{
+    width: 30px;
+    height: 30px;
+    background: darkorange;
+    border:solid 3px black;
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 5px;   
+}
+
+.subarray {
+    margin-bottom: 40px;
+    width: 100%;
+    float: none;
+    height: auto;
+    background: gainsboro;
+}
+
+.divider {
+    margin-bottom: 40px;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+.prime
+{
+    width: 30px;
+    height: 30px;
+    background: darkcyan;
+    border:solid 3px black;
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 5px;  
+    color: white;
+}

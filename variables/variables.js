@@ -1,13 +1,10 @@
 
+
+
 function Variables (div) {
     var self = this;
 
-
-
     this.counter = 0;
-
-
-
 
 
     //
@@ -86,8 +83,6 @@ function Variables (div) {
             alpha.innerHTML = asci;
         }
 
-        
-
 
         if (self.ct === self.actual_range ) {
             self.actual_range = self.ct * 2;
@@ -136,6 +131,60 @@ function Variables (div) {
 
     }
 
+
+    this.unicode_ct = 256;
+
+    this.unicode_bar = function( bit ) {
+        var c  = self.dec2bin( self.unicode_ct );
+        var ln = c.length;
+        var prepend = "";
+
+        var diff = 16 - ln;
+        if (diff > 0) {
+            for (var n = 0; n < diff; n++) {
+                prepend += "0";
+            }
+        }
+        
+       c = prepend + c; 
+
+        var str = "";
+
+
+        str += '<div class = "unicode_bar">';
+
+
+
+        // str += c;
+        for (var i = 0; i < 16; i++) {
+            var cl = "tinyb";
+            if (c[i] === '0') cl = "tiny";
+
+            str += '<div class = "' + cl + '"></div>';            
+        }
+
+        str += '<div class = "unicode_no">' + self.unicode_ct + '</div>';
+
+        str += '</div>';
+        return str;
+
+    }
+
+    this.unicode = function() {
+        self.unicode_ct ++;
+        var s = "";
+
+        s += '<div class = "unicode">';
+        var c = String.fromCharCode( self.unicode_ct );
+        s += c;
+        s += '</div>';
+
+        s += self.unicode_bar();
+
+       var element = document.getElementById(div);
+        element.innerHTML = s;
+
+    }
 
 
     //// showing the storage logic ///
@@ -259,15 +308,237 @@ function Variables (div) {
 
     }
 
-    //////////////////////////////////////////////
+    // assignation
 
+    this.act = 0;
+
+    this.changeVar = function() {
+        var s = "";
+        var t = "";
+        self.act ++;
+
+        switch(self.act) {
+            case 1:
+             s = " x =";
+             t = "[ x ]";
+            break;
+
+            case 2:
+             s = " logo =";
+             t = "[ logo ]";
+            break;
+
+            case 3:
+             s = " egal =";
+             t = "[ egal ]";
+            break;
+
+            case 4:
+                s = '<span id = "var"> nova = egal</span></div>'; 
+                t = "[ egal, nova ]";             
+            break;
+        }
+
+        if (self.act < 4)
+        {
+        var el = document.getElementById("var");
+        el.innerHTML = s;
+
+        el = document.getElementById("varpointer");
+        el.innerHTML = t;
+        } else {
+        var el = document.getElementById("var");
+        el.innerHTML = s;
+
+        el = document.getElementById("value");
+        el.innerHTML = "";
+        el = document.getElementById("varpointer");
+        el.innerHTML = t;
+        }
+    
+
+    }
+
+    this.assignation = function() {
+        var s = "";
+        var s = "";
+        s += '<div onClick = "v.changeVar()" class ="assign">';
+            s += '<span class = "keyword">var</span>';
+            s += '<span id = "var"> a =</span></div>';        
+        
+        s += '<span id = "value">';
+            s += '<div class ="sbracket">{</div>';
+            s += '<div id = "joker" class ="joker">17</div>';    
+            s += '<div class ="sbracket">}</div>';
+        s += '</span>';
+
+        s += '<div class = "cell_section">';
+
+        for (var i = 0; i < 20; i++) {
+            s += '<div class = "small_cell">';
+                if (i === 3) {
+                    s += '<div class = "dsmall_cell"></div>';
+                    }
+                else          s += '<div class = "ssmall_cell"></div>';
+                // s += '<div class = "adr">' + nr + '</div>';
+            s += '</div>';
+        }
+
+        s += '<div id = "varpointer" class = "varpointer">[ a ]</div>';
+        s += '</div>';
+
+
+
+        var d = document.getElementById(div);
+        d.innerHTML = s;
+
+    }
+
+
+
+
+    ///////////////// different types ///////////
+    this.cct = 0;
+    
+    this.change = function() {
+        self.cct ++;
+        var s; 
+
+        switch(self.cct) {
+            case 1:
+                console.log( Math.PI);
+                s = "3.14";
+            break;
+
+            case 2:
+              s = "'GO'";
+            break;
+
+            case 3:
+              s = "a";
+            break;
+
+            case 4:
+              s = "{ ... }";
+            break;
+
+            case 5:
+                self.foward();
+            break;
+
+        }
+    var el = document.getElementById("njoker");
+    el.innerHTML = s;
+
+    }
+
+
+    this.different_types = function() {
+        var s = "";
+        s += '<div class ="bracket">{</div>';
+        s += '<div id = "njoker" class ="njoker" onClick = "v.change()">17</div>';    
+        s += '<div class ="bracket">}</div>';
+
+        var d = document.getElementById(div);
+        d.innerHTML = s;
+
+    }
+
+    // keyvalue
+    this.key_value = function() {
+        var s = "";
+
+        s += '<div class = "key">key</div>';
+        s += '<div class = "pointer">➞</div>';
+        s += '<div class = "value">';
+            s += '<div class = "valuetext">{value}</div>';
+        s += '</div>';
+
+        var d = document.getElementById(div);
+        d.innerHTML = s;
+    }
+
+
+
+
+
+    //////////////////////////////////////////////
+    this.checkKeys = function( ev ) {
+        console.log( ev.code );
+        switch( ev.code) {
+            case 'ArrowRight':
+                self.forward();
+            break;
+
+            case 'ArrowLeft':
+                self.backward();
+            break;
+        }
+
+    }
+
+
+    this.navigation = function() {
+        window.addEventListener("keydown", self.checkKeys );
+    }
+
+    this.pct = 0;
+
+    this.forward = function() {
+        self.pct ++;
+        self.process();
+    }
+
+
+    this.backward = function() {
+        if (self.pct > 0) self.pct --;
+        self.process();
+    }
+
+    this.process = function() {
+        console.log( self.pct );
+        window.clearInterval( self.interval );
+        switch( self.pct ) {
+            case 1:
+                self.single_cell();
+            break;
+
+            case 2:
+                self.multiple_cells();
+            break;
+
+            case 3:
+                self.bit_system();
+            break;
+
+            case 4:
+                self.interval = window.setInterval( self.unicode, 100);
+            break;
+
+            case 5:
+                window.clearInterval( self.interval);
+                self.different_types();
+            break;
+
+            case 6:
+                self.assignation();
+            break;
+            case 7:
+                self.key_value();
+            break;
+
+            case 8:
+                self.charset = new CharSet(256, div);
+            break;
+
+        }
+    }
 
 
 
     this.init = function() {
-        // self.single_cell();
-        // this.multiple_cells(100);
-        this.bit_system();
+        self.navigation();
+        
     }
 
 
