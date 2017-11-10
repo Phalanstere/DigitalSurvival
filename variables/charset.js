@@ -35,7 +35,7 @@ this.init = function() {
     var s = "";
 
     s += '<div class = "CharSet">';
-    s += '<input onChange = "v.charset.input(this)" typ= "text" />';
+    s += '<input class = "charInput" onChange = "v.charset.input(this)" typ= "text" />';
     s += '<br>'
     s += '<br>'
 

@@ -22,7 +22,22 @@
     top: 90%;
     bottom: 0;
     margin: auto;
+    color: silver;
+    line-height: 40px;
 
+}
+
+
+.big
+{
+font-family: monospace;   
+color: gainsboro;
+text-shadow: 2px 2px 10px darkslategray;
+font-size: 120px;
+height: 300px;
+width: auto;
+top: 0;
+text-align: center;
 }
 
 
@@ -45,8 +60,9 @@
 
 
 .scell {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
     background: yellow;
     border:solid 3px black;
     float: left;
@@ -69,13 +85,32 @@
     margin-right: 5px;   
 }
 
-.subarray {
+.sub {
     margin-bottom: 40px;
     width: 100%;
     float: none;
-    height: auto;
-    background: gainsboro;
+    height: 130px;
+    background: green;
 }
+
+
+#sub {
+    margin-bottom: 40px;
+    width: 100%;
+    float: none;
+    height: 130px;
+}
+
+#sub2 {
+    margin-bottom: 40px;
+    width: 100%;
+    float: none;
+    height: 130px;
+
+}
+
+
+
 
 .divider {
     margin-bottom: 40px;

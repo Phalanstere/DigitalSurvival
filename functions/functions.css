@@ -1,0 +1,474 @@
+
+.stage {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: -20%;
+    bottom: 0;
+    margin: auto;
+}
+
+.big
+{
+font-family: monospace;   
+color: gainsboro;
+text-shadow: 2px 2px 10px darkslategray;
+font-size: 120px;
+height: 300px;
+width: auto;
+top: 0;
+text-align: center;
+}
+
+
+
+.machine 
+{
+width: 320px;
+height: 500px;
+border:solid black 16px;
+position: absolute;
+border-radius: 3.5%;
+left: 0;
+right: 0;
+margin: auto;
+top: 20%;
+bottom: 0;
+}
+
+
+.slotarea {
+position: absolute;
+width: 10%;
+height: 75%;
+top: 10%;
+right: 2%;
+border:solid 3px rgba(0,0,0,0.9);
+background: gainsboro;
+}
+
+.slot {
+position: absolute;    
+top: 16%;
+left: 87%;
+font-size: 30px;
+font-weight: 800;
+font-family: monospace;
+font-stretch: ultra-condensed;
+letter-spacing: -7px;
+text-shadow: 2px 2px 2px darkslategray;
+}
+
+
+.return {
+position: absolute;
+bottom: 3%;
+left: 25%;
+width: 40%;
+border:solid black 8px;
+background: gainsboro;
+color: rgba(0,0,0, 0.3);
+font-family: monospace;
+padding-top: 3px;
+text-align: center;
+height: 20px;
+box-shadow:inset 2px 2px 2px darkslategray;
+}
+
+
+.returnOverlay
+{
+text-align: center;
+color: rgba(0,0,0, 0);
+position: absolute;
+}
+
+
+#something
+{
+opacity: 0;
+color: red;
+}
+
+
+#semicolon
+{
+position: absolute;
+top: 50px;
+transform: scale(4);
+font-size: 18px;
+color: rgba(0,0,0,0);
+}
+
+
+.type {
+font-family: monospace;
+font-size: 10px;
+color: grey;
+position: absolute;
+top: 31%;
+left: 14%;
+width: 60%;
+text-align: center;   
+}
+
+
+.name {
+font-family: Pacifico;
+font-size: 60px;
+color: pink;
+position: absolute;
+bottom: 15%;
+left: 13%;
+width: 60%;
+text-align: center;
+transform: rotate(-3deg);
+}
+
+
+
+.protected {
+    color: blue;
+}
+
+
+.nullreturn {
+position: absolute;
+bottom: 3.5%;
+right: 5%;
+width: 6%;
+border:solid black 3px;
+background: gainsboro;
+color: rgba(0,0,0, 0.3);
+font-family: monospace;
+font-weight: 800;
+padding-top: 3px;
+text-align: center;
+height: 20px;
+box-shadow:inset 2px 2px 2px darkslategray;    
+}
+
+
+.interior {
+position: absolute;
+width: 70%;
+height: 20%;
+left: 10%;
+top: 10%;
+
+
+box-shadow:inset 2px 2px 2px darkslategray;  
+
+background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.openingBracket {
+position: absolute;
+left: 0;
+top: 0;
+font-size: 30px;
+color: gainsboro;
+}
+
+
+.closingBracket {
+position: absolute;
+bottom: 3.3%;
+right: 0;
+font-size: 30px;
+color: gainsboro;
+float: right;
+}
+
+
+#big_slot {
+    position: relative;
+    margin-left: 80%;
+    text-shadow: none;
+    color: rgb(60,60,60);
+    width: 300px;
+    font-size: 80px;
+    font-family: monospace;
+    height: 80px;
+    opacity: 0;
+}
+
+
+.bracket {
+    float: left;
+    font-size: 70px;
+}
+
+
+
+.cell {
+
+    float: left;
+    margin-top: 30px;
+    width: 24px;
+    height: 24px;
+    background: yellow;  
+    box-shadow: 0 0 0 3px black inset;
+    margin-left: 5px;
+    margin-left: 5px;
+}
+
+
+.params {
+    font-size: 17px;
+    float: left;
+    margin-top: 30px;
+    color: darkslategray;
+    font-weight: 800;
+}
+
+.paramsBig {
+    font-size: 36px;
+    float: left;
+    margin-top: 20px;
+    color: red;
+    font-family: monospace;
+}
+
+
+.paramsSmall {
+    font-size: 16px;
+    float: left;
+    color: red;
+    font-stretch: normal;
+    font-family: monospace;
+    text-shadow: none;
+    letter-spacing: 0;
+    margin-top: 8px;
+    margin-left: 7px;
+
+}
+
+.bracketS {
+    float: left;
+    font-size: 26px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+.comma {
+    color: red;
+}
+
+.comma2 {
+    color: red;
+    font-family: Pacifico;
+}
+
+
+
+
+.status {
+    position: absolute;
+    font-family: monospace;
+    font-size: 24px;
+    width: 60%;
+    height: 30px;
+    left: 20%;
+    bottom: 10%;
+}
+
+
+
+
+#formula {
+    position: absolute;
+    left: 10%;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    top: 0;
+    height: 120px;
+    color: black;
+}
+
+
+.Explanation {
+    font-size: 50px;
+
+}
+
+
+
+.FormulaC {
+font-family: Pacifico;
+font-size: 120px;
+color: pink;
+float: left;
+margin-right: 30px;
+}
+
+
+.Coffee {
+    float: left;
+}
+
+.BigBracket
+{
+color: rgb(80,80,80);
+float: left;
+font-family: 'Times New Roman', Times, serif;
+font-size: 140px;
+margin-top: 20px;
+}
+
+.CoffeeInput{
+color: red;    
+float: left;
+font-family: monospace;
+margin-top: 48px;
+}
+
+
+.Input{
+color: red;    
+float: left;
+font-family: monospace;
+margin-top: 80px;
+font-size: 60px;
+cursor: pointer;
+}
+
+.Typer {
+color: red;    
+float: left;
+width: 300px;
+font-family: monospace;
+font-size: 60px;
+}
+
+
+#editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: rgb(60,60,60);
+}
+
+
+
+.console {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: black;
+}
+
+
+
+#submit
+{
+position: absolute;
+width: 23px;    
+height: 23px;
+border-radius: 50%;
+top: 10px;
+left: 20px;
+font-family: monospace;
+cursor: pointer;
+}
+
+.Imprint{
+    margin-top: 3px;
+    margin-left: -4px;
+    font-size: 13px;
+    color: darkslategray;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+}
+
+
+.button {
+    display: block;
+    float: left;
+    font-size: 28px;
+    background-color: #434343;
+    background-image: -webkit-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
+    background-image: -moz-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
+    background-image: -o-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
+    background-image: -ms-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
+    background-image: linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7A7A7A), to(#515151));
+    border: none;
+    border-top: 3px solid #c2c2c2;
+    /*border-radius*/
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    /*box-shadow*/
+    -webkit-box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222;
+    -moz-box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222;
+    padding: 10px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    margin-right: 10px;
+    text-decoration: none;
+    color: #242424;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),                        -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),                        -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),                        -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),                                                -webkit-repeating-radial-gradient(    50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),                        -webkit-repeating-radial-gradient(    50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),                        -webkit-repeating-radial-gradient(    50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),                                                -webkit-radial-gradient(    50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+.button:before,
+.button:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*border-radius*/
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
+    /* fake conical gradients */
+    background-image: -webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),                        -webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),                        -webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),                        -webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.button:before {
+    /*transform*/
+    -webkit-transform: rotate( 65deg);
+    -moz-transform: rotate( 65deg);
+    -ms-transform: rotate( 65deg);
+    -o-transform: rotate( 65deg);
+    transform: rotate( 65deg);
+}
+.button:after {
+    /*transform*/
+    -webkit-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+    -ms-transform: rotate(-65deg);
+    -o-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+}
+.button:active {
+    border-top: 0px solid #dde1e7;
+    /*box-shadow*/
+    -webkit-box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222,0px 0px 5px #00aeff,0px 0px 50px #00aeff,0px 0px 50px #93d9fa;
+    -moz-box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222,0px 0px 5px #00aeff,0px 0px 50px #00aeff,0px 0px 50px #93d9fa;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.2), 0 1px 0 #2D2D2D, 0 2px 0 #2D2D2D, 0 3px 0 #2C2C2C, 0 4px 0 #2A2A2A, 0 0 0 6px black, 0 4px 0 6px black, 0 0 0 7px #222, 0 4px 0 7px #222,0px 0px 5px #00aeff,0px 0px 50px #00aeff,0px 0px 50px #93d9fa;
+    /*transform*/
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    transform: translateY(4px);
+}

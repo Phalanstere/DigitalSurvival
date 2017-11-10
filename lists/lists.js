@@ -11,22 +11,26 @@ function Lists( div ) {
     this.process = function() {
         switch( self.pct ) {
             case 0:
-                self.show_string();
+                self.intro();
             break;
 
             case 1:
-              self.show_numbers();
+                self.show_string();
             break;
 
             case 2:
-              self.show_objects();
+              self.show_numbers();
             break;
 
             case 3:
-                self.long_array(126);
+              self.show_objects();
             break;
 
             case 4:
+                self.long_array(126);
+            break;
+
+            case 5:
                 self.find_double();
             break;
 
@@ -262,7 +266,7 @@ this.mark_primenumber = function() {
 
         var s = "";
         
-        s += '<div class = subarray">';
+        s += '<div id = "sub" class = sub">';
         for (var i = 0; i < self.just.length; i++) {
            var it = self.just[i];
 
@@ -274,7 +278,7 @@ this.mark_primenumber = function() {
 
 
 
-      s += '<div class = subarray">';
+      s += '<div id = "sub2" class = sub">';
         for (var i = 0; i < self.unjust.length; i++) {
            var it = self.unjust[i];
 
@@ -285,6 +289,7 @@ this.mark_primenumber = function() {
         s += '</div>'; 
 
 
+        s += '<div class = sub">';
         for (var i = 0; i < self.primes.length; i++) {
            var it = self.primes[i];
 
@@ -292,7 +297,7 @@ this.mark_primenumber = function() {
             s += self.primes[i];
             s += '</div>'; 
         }
-
+        s += '</div>'; 
 
         var el = document.getElementById(div);
         el.innerHTML = s;
@@ -391,9 +396,19 @@ this.mark_primenumber = function() {
 
 
 
+    this.intro = function() {
+        var s = "";
+
+        s += '<div class = "big">Listen/Arrays </div>';
+        var el = document.getElementById(div);
+        el.innerHTML = s;
+    }
+
+
+
     this.init = function() {
         self.navigation();
-        self.show_string();
+        self.intro();
     }
 
 
