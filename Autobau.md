@@ -5,15 +5,14 @@ Der erste Akt: Wir erzeugen ein Funktionsobjekt, das zunächst einmal nur die ma
 
 
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
-    ```ruby
-    require 'redcarpet'
-    markdown = Redcarpet.new("Hello World!")
-    puts markdown.to_html
-    ```
+```javascript
+var x = function Car ( max ) {
 
-    ```javascript
-    var x = function Car ( max ) {
-    
-    }
-    ```
+}
+```
