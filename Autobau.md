@@ -18,7 +18,7 @@ var x = function Car ( max ) {
     this.max_velocity = max;
 }
 ```
-
+<hr>
 ### 2. Der Event-Listener
 
 Zweiter Akt: Wir wollen auf das Auto einwirken, also Gas geben und bremsen können. Dazu brauchen wir zwei Interfaces: Gas und Bremse. 
@@ -58,7 +58,7 @@ Wenn wir den Code jetzt ausführen, gibt es einen Fehler. Denn der Listener erwa
 Wir sehen hier das Schlüselwort **this**. Das heißt: die Funktion befindet sich im Inneren unseres Objekts, also im Auto.
 Dort müssen wir sie platzieren.
 
-
+<hr>
 ### 3. Verarbeitung des Events / der Zustand des Autos
 
 Wir fügen also die beiden Funktion hinzu:
@@ -273,7 +273,7 @@ var Car = function ( max ) {
 
     this.engine = function() {
         switch( this.state) {
-            case "accelearte":
+            case "accelerate":
             break;
 
             case "decelerate":
@@ -313,3 +313,98 @@ var Car = function ( max ) {
     window.addEventListener("keyup", this.interface );    // wird wieder losgelassen
 }
 ```
+
+
+# 5. Funktionalität
+
+Keine Angst - der Code wird sich nur noch unwesentlich aufblähen. Im Grunde geht es jetzt um simple Recheroperationen, nämlich
+dass wir die Geschwindigkeit des Autos erhöhen, wenn wir aufs Gas drücken, sie vermindern, wenn wir bremsen, und dann, wenn weder Gas noch Bremse gedrückt, das Trägheitsmoment berechnen. 
+
+
+
+## Beschleunigen
+
+```javascript
+    if (self.velocity < self.max_velocity) self.velocity += 0.3;               
+```
+Das heißt: sofern die Geschwindigkeit unterhalb der Maximalgeschwindigkeit liegt, wird der Wert um 0.3 erhöht.
+Das ist eine lineare Beschleunigung - und entspricht nicht gerade der Realität, bei der den Beschleunigungsfaktor dynamisiert.
+Aber es ist nur eine einzige Zeile - und das ist ausschlaggebend.
+
+
+## Bremsen
+
+Beim Bremsen haben wir es mit dem inversen Zustand zu tun. 
+
+```javascript
+    if (self.velocity > 0.5) self.velocity -= 0.5;               
+```
+
+## Trägheit
+
+Wird weder gebremst noch Gas geben, verlangsamt sich die Fahrt (aufgrund der Reibung und des Trägheismomentes) gleichwohl.
+
+```javascript
+    if (self.velocity > 0) self.velocity -= 0.05;
+```
+
+
+Das ergibt:
+
+
+
+```javascript
+var Car = function ( max ) {
+    var self = this;
+
+    this.max_velocity = max;
+    this.state = "resting";
+    this.velocity = 0;
+
+    this.engine = function() {
+        switch( this.state) {
+            case "accelerate":
+                if (self.velocity < self.max_velocity) self.velocity += 0.3; 
+            break;
+
+            case "decelerate":
+                if (self.velocity > 0.5) self.velocity -= 0.5;   
+            break;
+
+            case "resting":
+                if (self.velocity > 0) self.velocity -= 0.05;
+            break;
+        }
+    }
+
+    this.press = function(event) {
+        switch(event.code) {
+            
+            case 'ArrowUp':
+                self.state = "accelerate";
+            break;
+
+            case 'ArrowDown':
+                self.state = "decelerate";
+            break;
+        }
+
+    this.release = function(event) {
+        switch(event.code) {
+            
+            case 'ArrowUp':
+                self.state = "resting";
+            break;
+
+            case 'ArrowDown':
+                self.state = "resting";
+            break;
+        }
+    }
+
+    window.addEventListener("keydown", this.interface );  // Taste wird gedrückz
+    window.addEventListener("keyup", this.interface );    // wird wieder losgelassen
+}
+```
+
+
