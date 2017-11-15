@@ -1,28 +1,28 @@
-function loop( ) {
-	var list = []
-	for (var i = 0; i < 10; i++) {
-	
-	list.push(i)
-	console.log( list );
-	
-	
-	console.log("Aktueller Wert: " + i)
-	}
-	
-	while( list ) {
-	
-	list.shift();
-	console.log( list.length );
-	
-	
-	if ( list.length === 0) list = null
-	}
+function backgroundColor ( col ) {
+    if ( typeof( col) === "object") {
+        if (col.r && col.g && col.b) {
+            
+        
+
+        var c = "rgb(" + col.r + "," + col.g + "," + col.b + ")";
+
+        
+        var el = document.getElementById("full");
+        TweenMax.to(el, 1, { 
+                           background: c
+                           });
+
+
+        }
+    }
 }
 
 
 
 function Control( div ) {
     var self = this;
+
+
 
 
 
@@ -49,15 +49,34 @@ function Control( div ) {
             break;
 
             case 4:
-
+                self.array_explanation();
             break;
 
             case 5:
-                
+                self.various_arrays();
             break;
 
             case 6:
+                self.filled_arrays();
             break;
+
+            case 7:
+                self.array_object();
+            break;
+
+
+            case 8:
+                self.introduce_objects();
+            break;
+
+            case 9:
+                self.eternal_loop();
+            break;
+
+            case 10:
+                self.show_operators();
+            break;
+
 
             default:
                 alert("Problem");
@@ -142,7 +161,6 @@ function Control( div ) {
         else {
             self.done = true;
             editor.gotoLine(self.line, 5, true);
-            alert("bin fertig");
         }
 
         if (self.line === 9) {
@@ -222,7 +240,6 @@ function Control( div ) {
         else {
             self.done = true;
             editor.gotoLine(self.line, 5, true);
-            alert("bin fertig");
         }
 
         if (self.line === 9) {
@@ -255,6 +272,7 @@ function Control( div ) {
 
         self.loop();
     }
+
 
 
 
@@ -366,6 +384,309 @@ function Control( div ) {
 
 
 
+    this.array_explanation = function () {
+        console.log("EXPLANATION");
+        var el = document.getElementById("Explanation");
+
+        if (! el) {
+            var e = document.createElement("div");
+            e.className = "Explanation";
+            e.id = "Explanation";
+            document.getElementById("full").appendChild(e);
+            el = document.getElementById("Explanation");
+        }
+
+        var s = "";
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+        s += " []";
+        s += '<br/>';
+
+
+
+        el.innerHTML = s;
+    }
+
+
+    this.various_arrays = function() {
+        
+        var el = document.getElementById("Explanation");
+
+        var s = "";
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+        s += " []";
+        s += '<br/>';
+
+
+
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+
+        s += self.get_styled(" new", "op");
+
+        s += self.get_styled(" Array", "obj");
+
+        s += "()";
+
+        el.innerHTML = s;
+
+    }
+
+
+
+    this.filled_arrays = function() {
+        var el = document.getElementById("Explanation");
+        var text = self.filled_arrays_text();
+        el.innerHTML = text;
+    }
+
+
+    this.array_object = function() {
+
+        self.check_big_object();
+
+        var el = document.getElementById("Explanation");
+        var text = self.filled_arrays_text();
+        text += self.array_object_text(); 
+        
+        el.innerHTML = text;
+
+        
+    }
+
+
+    this.array_object_text = function() {
+        var s = "";
+    
+        s += '<div class = "break"/>';
+
+        s += '<div>';
+            s += "list"; 
+            s += self.get_styled(".", "op");
+            s += self.get_styled ("push", "var");
+            s += "(1)";
+
+            s += '<br/>';
+
+            s += "list"; 
+            s += self.get_styled(".", "op");
+            s += self.get_styled ("shift", "var");
+            s += "()";
+
+
+        s += '</div>';
+
+        return s;
+    }
+
+
+    this.check_big_object = function() {
+
+        var el = document.getElementById("BigObject");
+        if (el) document.getElementById("BigObject").remove();
+    }
+
+
+    this.filled_arrays_text = function() {
+
+        var s = "";
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+        s += " []";
+        s += '<br/>';
+
+
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+
+        s += self.get_styled(" new", "op");
+
+        s += self.get_styled(" Array", "obj");
+
+        s += "()";
+        s += '<br/>';
+
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+        s += " [0,1,2,3,4,5]";
+        s += '<br/>';
+
+        s += self.get_styled ("var ", "var");
+        s += "list ";      
+        s += self.get_styled("=", "op");
+        s += self.get_styled(" new", "op");
+        s += self.get_styled(" Array", "obj");
+
+        s += "(0,1,2,3,4,5)";
+        s += '<br/>';
+        s += '<br/>';
+
+        s += '<div>';
+
+        for (var i = 0; i< 6; i++) {
+            s += '<div class = "block">' + i + '</div>';
+        }
+
+        s += '</div>';
+
+       return s;
+
+    }
+
+
+
+
+
+    this.eternal_loop = function() {
+        var editor = self.editor;
+        editor.setValue("");     
+
+
+        editor.session.insert(editor.getCursorPosition(), 'function do_something() {');
+        
+        var nl = "\n";
+        var nlt = "\n\t";
+
+
+        editor.session.insert(editor.getCursorPosition(), nl + nl) ;
+        editor.session.insert(editor.getCursorPosition(), nl + '}');
+
+
+        editor.session.insert(editor.getCursorPosition(), nl + nl + nl) ;
+
+        
+        editor.session.insert(editor.getCursorPosition(), 'window.setInterval( do_something, 1000);');
+
+    }
+
+
+
+
+
+
+    this.introduce_objects = function() {
+        this.editor.setValue("");
+        
+        var el = document.getElementById("Explanation");
+        el.innerHTML = "";
+
+        
+        document.getElementById("ndx").remove();
+        document.getElementById("console").remove();
+        document.getElementById("console2").remove();
+        document.getElementById("console3").remove();
+
+       s = '<div id = "BigObject" class = "BigObject">{}</div>';
+       el = document.getElementById(div);
+       el.innerHTML = s;
+
+
+        var e = document.createElement("div");
+        e.className = "test";
+        e.id = "test";
+        e.onclick = ctr.test;
+        e.innerHTML = "TEST";
+        document.getElementById("editor").appendChild(e);
+        
+
+        var nlt = "\n\t";
+        var nltt = "\n\t\t";
+        var s; 
+
+
+        var editor = self.editor;
+        editor.session.insert(editor.getCursorPosition(), "var o = {};");
+
+        editor.session.insert(editor.getCursorPosition(), nlt + nlt);
+
+        editor.session.insert(editor.getCursorPosition(), "\nalert( o );");
+
+    }
+
+
+    this.test = function() {
+        var myCode = self.editor.getSession().getValue();
+        eval( myCode );
+    }
+
+
+    
+    this.get_styled = function( text, type ) {
+         var span = '<span class = "' + type + '">';
+         var spano   = '</span>';
+
+         return span + text + spano;
+    }
+
+
+
+    this.show_operators = function() {
+        self.check_big_object();
+
+        var el = document.getElementById("Explanation");
+
+        var s = "";
+        s += self.get_styled ("var ", "var");
+        s += "a ";      
+        s += self.get_styled("= ", "op");
+        s += self.get_styled("17", "value");
+        s += ';<br/>';
+
+        s += "a ";
+        s += self.get_styled("++", "op"); 
+        s += ";"
+
+        s += self.get_styled ("  // Wert von a ist 18", "comment");
+        
+        s += '<br/>';
+        s += "a ";
+        s += self.get_styled("--", "op"); 
+        s += ";"
+        s += self.get_styled ("  // Wert von a ist 17", "comment");
+
+        s += '<br/>';
+        s += "a ";
+        s += self.get_styled("=", "op"); 
+        s += " a";
+        s += self.get_styled(" * " , "op"); 
+        s += self.get_styled("2", "value");
+        s += ";"
+        s += self.get_styled ("  // Wert von a ist 34", "comment");
+
+        s += '<br/>';
+        s += "a ";
+        s += self.get_styled("*= ", "op"); 
+        s += self.get_styled("2", "value");
+        s += ";"
+        s += self.get_styled ("  // kürzere Notation der Multiplikation", "comment");
+    
+        s += '<br/>';
+        s += "a ";
+        s += self.get_styled("/= ", "op"); 
+        s += self.get_styled("2", "value");
+        s += ";"
+        s += self.get_styled ("  // kürzere Notation der Division", "comment");
+
+
+
+
+        el.innerHTML = s;
+
+
+
+
+    }
+
+
+
+
     this.init_ace = function() {
         var s = '<div id = "editor">'
         s += '</div>';
@@ -435,6 +756,10 @@ function Control( div ) {
 
 
     }
+
+
+
+
 
 
     this.intro = function() {

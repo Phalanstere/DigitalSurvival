@@ -1,0 +1,40 @@
+---
+title: "Lesson"
+author: John Doe
+date: Sep 13th, 2017
+type: presentation
+state:
+server: http://ludicmedia.de:17777
+---
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "0 0 4px black",
+               fontSize: "2.5vw",
+               marginBottom: "20px"
+            }} >
+        Martin Burckhardt
+        </Heading>
+                <Heading style = 
+            {{ color: "white",
+               textShadow: "0 0 4px black",
+               fontSize: "2.5vw"
+            }} >
+       Heisse Luft
+        </Heading>
+        
+
+</Slide>
+
+
+
+
+
+
+
+
+
