@@ -1,31 +1,41 @@
+// var de = require("./de.json");
+var de = "fkjkjhgkerjhgkjhgkwdüpiizg32hgl";
+
+    
+
+
+
+
+
 function letter_frequency( text ) {
     
         // Zuerst wird die Liste definiert
         var list = [];
-    
+
         function count_chars ( char ) {
-            var found = false; // 
-            for (var n = 0; n < list.length; n++)
-               var obj = list[i];
+            var found = false; 
+           
+            for (var n = 0; n < list.length; n++) {
+               var obj = list[n];
                if ( obj.char === char) {
                     obj.index ++;
                     found = true;
                     }
                }       
-    
-            if ( found === false ) {
+            
+        
+            if ( ! found  ) {
                 var o = { 
-                    char: char,
+                    char: c,
                     count: 1,
                     frequency: null
                 }
                 list. push( o );
         }
-    
 
         // und jetzt vollziehen wir den Textdurchlauf
     
-        for ( var i = 0; i < text.lengt; i++) {
+        for ( var i = 0; i < text.length; i++) {
             var char = text[i];
             count_chars( char );
         } 
@@ -53,7 +63,10 @@ function letter_frequency( text ) {
         var valid = true; 
     
         for (var i = 0; i < actual.legth; i++) {
-            var item = actual[ i ];
+            var item 
+            
+            
+            = actual[ i ];
             var model_item = scan_model( item.char );
             // Jetzt der Vergleich
             if ( item.frequency < lower_range || item.frequency > upper.range) valid = false;
@@ -62,3 +75,8 @@ function letter_frequency( text ) {
     
     return valid;
     }
+
+
+
+var list = letter_frequency(de);
+console.log( list );
