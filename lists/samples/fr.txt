@@ -1,0 +1,346 @@
+Objectif de la série
+ La collection Corpus Christianorum in Translation (CCT) offre des traductions modernes
+des textes patristiques et médiévaux grecs et latins qui ont été édités dans l’une des
+collections Corpus Christianorum (Series Graeca, Series Latina et Continuatio
+Mediaevalis). Les langues cibles sont l'allemand, l'anglais, l'espagnol, le français et
+l'italien. Ces traductions, qui sont publiées indépendamment des éditions critiques, se
+proposent de rendre accessible les textes édités dans le Corpus Christianorum à ceux
+qui n'ont pas l'occasion de les lire dans la langue originale. Pour ceux qui sont familiers
+de la langue originale, les traductions pourront servir d'un instrument de référence
+commode et d'aide pour l'interprétation des textes grecs ou latins.
+2. Coordonnées
+ Si vous envisagez de contribuer à une traduction, veuillez contacter la rédaction du
+Corpus Christianorum à corpus.christianorum@brepols.net ou l’un des « publishing
+managers » énumérés à http://www.corpuschristianorum.org/series/cctfr.html. Voir
+aussi la page ‘Author Information’ sur le site du Corpus Christianorum
+(http://www.corpuschristianorum.org/authors.html). Des coordonnées générales sont
+disponibles à http://www.corpuschristianorum.org/contact.html. L’adresse postale est:
+Corpus Christianorum in Translation
+Sint-Annaconvent
+Begijnhof 39
+B-2300 Turnhout
+Belgique
+
+3. Notes préliminaires
+ Le présent document comporte les directives pour les traducteurs. Veuillez lire ces
+directives avant de soumettre des échantillons du travail: cela réduira la quantité de
+temps et d’effort employée à la correction des épreuves.
+Des cas particuliers peuvent parfois exiger des exceptions aux règles prévues. Si vous
+observez la nécessité d’un traitement spécial, p. ex. des choses qui n’auraient pas été
+discutées dans ces directives, veuillez présenter ces cas particuliers quand vous
+soumettrez des échantillons du travail.
+Préparation du manuscrit
+4.1. Soumettre des échantillons
+ Avant de procéder à la mise au point définitive du manuscrit, soumettez-en quelques
+pages comme échantillons au « publishing manager ». Les manuscrits doivent être
+soumis sous forme de fichiers Word et accompagnés d’une copie papier. L’introduction
+et la traduction doivent être envoyées dans des fichiers séparés.
+La maison d’édition soumettra l’épreuve à une procédure de peer review et pourra
+aussi demander à l’éditeur du texte original de donner son opinion sur la traduction 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 2
+proposée. Le traducteur veillera à tenir compte des remarques que la maison d'édition
+lui aura adressées. Si, dans certains cas, il estime ne pas pouvoir le faire, il
+argumentera son choix.
+La maison d’édition ne prendra de décision définitive quant à la publication que
+lorsqu’elle aura revu le dernier état du manuscrit, incluant l’introduction, le texte
+traduit, l’apparat et les index.
+4.2. Corriger des épreuves
+ Relisez et corrigez vôtre copie. Éliminez les espaces doubles; avant et après un tiret il
+ne faut mettre qu’un seul espace.
+5. La typographie
+ Un style uniforme pour les capitales, les abréviations, la ponctuation, etc. doit être
+observé tout au long du texte.
+Si vous avez besoin de caractères non latins (grecs par exemple), il est recommandé
+d’utiliser une police Unicode ou ‘true type’. Dans ce cas, il faut soumettre cette police
+au « publishing manager ».
+Les mots doivent être orthographiés selon les normes propres à chaque langue. Par
+exemple, en français le signe œ (Unicode 0153) doit être utilisé pour la ligature oe (p.
+ex. ‘œuvre’); en espagnol, ~ doit être utilisé pour les tildes (p. ex. ‘España’), etc.
+De même, la ponctuation doit suivre l’usage normal de la langue cible; p. ex. dans un
+texte en français, une référence à une note qui est mise à la fin d’une phrase doit
+précéder le point, alors que dans un texte en anglais, la référence doit suivre le point.
+Si vous avez besoin de caractères spéciaux (comme par exemple un trait horizontal
+au-dessus de certaines lettres) et que ceux-ci ne sont pas disponibles dans votre
+logiciel de traitement de texte, vous pouvez utiliser des codes. Dans ce cas, prévenez
+le comité éditorial au moment de soumettre des échantillons et assurez-vous que les
+codes soient univoques et ne ressemblent pas à des codes que vous utilisez à d’autres
+endroits.
+Utilisez les possibilités de mise en page offertes par votre logiciel de traitement de
+texte, comme l’italique, les exposants, les petites capitales, etc., mais ne cherchez pas
+à imiter la mise en page finale, qui sera créé par la maison d’édition.
+6. Contenu du volume
+ Un volume de la série Corpus Christianorum in Translation doit présenter une
+introduction, une bibliographie, le texte traduit (et annoté) et des index, et
+éventuellement aussi un commentaire et/ou des appendices.
+L’introduction
+7.1. Objectif et contenu
+ L’introduction à une traduction se propose d’autres buts que les introductions aux
+éditions critiques. Alors que les dernières traitent principalement de la critique du texte
+et de sa transmission, l’introduction à la traduction doit en premier lieu s’attacher à
+améliorer l’accessibilité au texte. Cela signifie qu’elle doit comporter des informations
+biographiques et bibliographiques sur l’auteur du texte; une introduction au texte luimême,
+à son contenu et à sa portée culturelle et doctrinale; le status quaestionis
+concernant l’œuvre; une discussion des problèmes concernant le texte; une
+bibliographie. S’il existe d’autres traductions du texte, il est recommandé de leur
+accorder aussi une attention particulière.
+L’introduction doit être concise et ne pas dépasser 50 000 caractères (environ 30 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 3
+pages du volume imprimé), espaces non compris. Utilisez des notes en bas de page
+pour les références et les explications, mais chercher à les limiter au minimum.
+7.2. Le style
+ Le texte doit faire un rapport clair et concis des résultats de la recherche moderne, en
+tenant compte d’un public formé, mais non nécessairement spécialiste. Le style devra
+être accessible et le ton neutre, sans effets littéraires.
+7.3. Des renvois entre les séries
+ L’introduction pourra présenter un bref exposé des nouvelles considérations et des
+publications pertinentes suscitées par l’édition correspondante du Corpus
+Christianorum. Elle pourra aussi comporter des mises à jour bibliographiques, des
+révisions, des appendices et des corrections apportées à l’édition. Si le traducteur et
+l’éditeur du texte sont une seule et même personne, il lui sera permis d’ajouter de
+nouvelles considérations concernant le texte édité.
+7.4. Des renvois à l’intérieur de la série
+ L’introduction pourra aussi compléter ou clarifier les informations qui se trouvent déjà
+ailleurs dans la série. (Ceci s’applique seulement aux volumes existant dans la même
+langue cible.) Autant que possible la répétition de ces informations doit être évitée et
+le lecteur doit être renvoyé aux volumes concernés.
+La traduction
+8.1. Objectif
+ La traduction doit proscrire les effets littéraires et donner une image fidèle et
+reconnaissable du texte, dans un style sobre et moderne en accord avec les normes de
+la langue cible. Elle doit s’attacher au contenu plutôt qu’au style du texte d’origine.
+8.2. Le rapport avec l’édition critique
+ En principe, chaque traduction se réfère à l’édition critique correspondante du texte
+source de la collection Corpus Christianorum. La ponctuation, en accord avec les
+conventions modernes de la langue cible, se réfère autant que possible à celle de
+l’édition. Si un changement de ponctuation apporte un sens nouveau à une partie du
+texte, il faudra l’indiquer par une note de bas de page placée à l’endroit voulu. Les cas
+où le traducteur propose une interprétation divergente doivent également être
+indiqués dans des notes en bas de page.
+8.3. Les principes de traduction
+ Quant aux conventions générales de traduction, veuillez consulter les documents
+appropriés. Une présentation sommaire de la traduction latine se trouve chez J.
+Marouzeau, Introduction au latin (chapitre XI, ‘La pratique du latin: traduire’). Bien
+que conçues pour un usage scolaire, ces réflexions peuvent être utiles à un traducteur
+moderne parce qu’elles traitent d’exemples concrets.
+8.4. Le style et l’expression
+ La traduction doit être écrite dans une langue contemporaine, neutre et transparente.
+En matière de style, elle doit tenir compte de la langue cible plutôt que de la langue
+source. S’il le faut, une certaine liberté sera donc permise pour rester plus fidèle au
+sens du texte.
+Le naturel de l’expression a son importance. Les archaïsmes et les calques doivent
+être évités. Ne traduisez pas verbum pro verbo. S’il le faut, vous pourrez adapter les
+expressions idiomatiques à des équivalents dans la langue cible, à la condition de ne
+pas fausser le sens exact du texte source. Gardez à l’esprit que l’état final doit être
+aussi facile à lire qu’un livre d’aujourd’hui. 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 4
+8.5. Consistance
+ Il faut, autant que faire se peut, s'efforcer de maintenir une seule traduction pour
+chaque mot dans la langue originale; carnalis, par exemple, peut être traduit par
+‘charnel’ ou ‘de chair’, non par les deux.
+8.6. Précision
+ La traduction doit impérativement être exacte, et ne doit comporter ni simplification ni
+paraphrase; il est important de rester fidèle à l’expression. Autant que possible, vous
+devez vous efforcer de chercher un synonyme dans la langue cible pour chaque mot
+de la langue source. Prenons pour exemple deux traductions des Confessiones de saint
+Augustin (CCSL 27):
+Numquid non potens est manus tua, deus omnipotens, sanare omnes languores animae meae atque
+abundantiore gratia tua lasciuos motus etiam mei soporis extinguere?
+(Aug. Conf. X, 30 (42), ll. 23-25)
+Mais votre main, Dieu tout-puissant, n’a-t-elle pas le pouvoir de guérir toutes les langueurs de mon
+âme, et de verser une grâce abondante sur les mouvements impurs de mon sommeil?
+(Œuvres complètes de saint Augustin, sous la direction de M. Poujoulat et de M. Raulx, t. I (Bar-leDuc
+: L. Guérin & Cie 1864), p. 464)
+Est-ce que ta main n’a pas la puissance, ô Dieu tout-puissant, de guérir toutes les langueurs de mon
+âme, et par un surcroît de ta grâce, d’éteindre jusqu’aux mouvements lascifs de mon sommeil?
+(Les Confessions. Livres VIII-XIII, trad. E. Tréhorel et G. Bouissou (Bibliothèque Augustinienne :
+Œuvres de saint Augustin 14, deuxième série : Dieu et son œuvre. Paris : Desclée De Brouwer
+1962), p. 215)
+La première partie de la phrase suit le latin de manière assez similaire dans les deux
+exemples, mais pour la deuxième partie, le premier exemple diverge considérablement
+de la source : il affaiblit l’esprit de l’original, en employant abondante pour le
+comparatif abundantiore, en remplaçant le verbe et en modifiant la syntaxe (verser
+une grâce sur pour gratiā ... extinguere, où l’image originale est entièrement perdue,
+et, enfin, en utilisant impurs pour lasciuos.
+Le deuxième exemple reste très proche du latin en syntaxe et dans le choix des mots,
+éteindre correspondant à extinguere, lascifs à lasciuos et cetera. (Il faut toutefois
+garder à l'esprit que les mots français peuvent ressembler à ceux du latin sans pour
+autant être synonymes.)
+Il est évident que, bien que l’on puisse défendre chaque traduction, pour nos
+collections, le style de la deuxième traduction est préférable à celui de la première.
+8.7. Fidélité en esprit
+ Il est important de proscrire toute ambiguïté, en particulier si elle peut entraîner des
+contresens. Puisque notre objectif est de rendre accessible le contenu du texte original
+aussi précisément que possible, la traduction ne doit pas employer d’expressions ou
+d’images étrangères au texte source, en particulier si elles doivent entraîner des
+contresens. Cela est surtout une affaire de sens commun et dépend en grande partie
+du genre de l’exposé. Pour prendre un exemple peut-être évident, il serait trompeur
+de traduire une expression comme µὴ γένοιτο par ‘à Dieu ne plaise’ si le texte présente
+les propos d’un païen, et faire ceci dans un débat sur l’interaction entre Dieu et sa
+création, ou la question du libre-arbitre, pourra être également problématique.
+8.8. Fractionner les longues phrases
+ En plus d’être souvent désagréables au lecteur moderne, les phrases longues et
+complexes tendent à influencer négativement la compréhension d’un texte. Ces
+périodes pourront être fractionnées en phrases courtes de manière à devenir plus
+digestes. Toutefois, il faut prendre garde à la préservation des rapports logiques entre
+les différentes parties de la phrase originale. Dans l’exemple ci-dessous, une longue
+phrase est séparée en plusieurs phrases plus courtes (mais encore quelque peu
+« cicéroniennes ») :
+Deinde paulatim tu, domine, manu mitissima et misericordissima pertractans et componens cor 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 5
+meum, consideranti, quam innumerabilia crederem, quae non uiderem neque cum gererentur
+affuissem, sicut tam multa in historia gentium, tam multa de locis atque urbibus, quae non uideram,
+tam multa amicis, tam multa medicis, tam multa hominibus aliis atque aliis, quae nisi crederentur,
+omnino in hac uita nihil ageremus, postremo quam inconcusse fixum fide retinerem, de quibus
+parentibus ortus essem, quod scire non possem, nisi audiendo credidissem, persuasisti mihi non qui
+crederent libris tuis, quos tanta in omnibus fere gentibus auctoritate fundasti, sed qui non crederent
+esse culpandos nec audiendos esse, si qui forte mihi dicerent : (...)
+(Aug. Conf. VI, 5 (7), ll. 7-18)
+Puis peu à peu, Seigneur, d’une main très douce et très miséricordieuse, tu maniais et disposais mon
+cœur, m’amenant à considérer l’infinité de choses, auxquelles je croyais sans les voir, ou sans avoir
+assisté à leur production : ainsi, tant de choses sur l’histoire des nations, tant de choses sur les lieux
+que sur la foi des amis, sur la foi des médecins, sur la foi de tels et tels autres nous croyons, sinon
+nous ne pourrions absolument rien faire dans la vie d’ici-bas. Enfin, avec quelle foi inébranlable
+n’étais-je pas bien assuré des parents dont j’étais issu, ce que je n’aurais pu savoir sans croire sur
+parole ! Et par là, tu m’as persuadé que ce n’était pas ceux qui croyaient à tes Livres, dont tu as si
+fermement fondé la haute autorité dans presque toutes les nations, mais ceux qui n’y croyaient pas,
+qu’il fallait accuser de faute ; et qu’il ne fallait pas écouter ceux qui me diraient peut-être : (...)
+(Les Confessions. Livres I-VII, trad. E. Tréhorel et G. Bouissou (Bibliothèque Augustinienne : Œuvres
+de saint Augustin 13, deuxième série : Dieu et son œuvre. Paris : Desclée De Brouwer 1962),
+p. 531)
+8.9. Citer des mots grecs ou latins
+ Les mots grecs ou latins peuvent être cités in textu, mais seulement en cas de stricte
+nécessité. Cela est particulièrement vrai si la traduction ou l’étymologie d’expressions
+ou de mots sont discutées dans le texte, p. ex. :
+Le vêtement le plus ancien est appelé ‘tunique’ (tonica) parce qu’il rend un son pendant le
+mouvement quand on marche; car tonus signifie ‘son’.
+(Isidore de Séville, Etymologiae XIX, xxii, 6)
+Les citations
+9.1. Citer des langues étrangères
+ Si vous citez des mots ou des expressions grecs, latins ou d’une autre langue
+étrangère, ajoutez-en une traduction, aussi bien dans l’introduction que dans le texte
+traduit. Les mots grecs doivent être translittérés. (Voir section 10.)
+9.2. La source d’une traduction
+ En citant des textes anciens ou bibliques, le traducteur doit indiquer soit dans
+l’introduction, soit dans une note de bas de page, quelle est la traduction qu’il cite, s’il
+ne s'agit pas de sa propre traduction.
+9.3. L’encastrement des citations
+ Dans les citations, employez les signes de ponctuation conformément aux conventions
+de la langue cible (sauf pour les citations de la Bible – voir plus bas). De simples
+allusions ne sont ni encadrées de signes de ponctuation ni mises en italiques.
+9.4. Les références aux passages bibliques
+ Les passages de l’Écriture sont mis en italique et ne sont pas entourés de signes de
+ponctuation. En cas de citation précise de la Bible, la référence doit être placée in
+textu entre parenthèses, p. ex.:
+pour que tu dégages mes pieds du filet (Ps. 24, 15).
+(Les Confessions. Livres VIII-XIII, trad. E. Tréhorel et G. Bouissou (Bibliothèque Augustinienne :
+Œuvres de saint Augustin 14, deuxième série : Dieu et son œuvre. Paris : Desclée De Brouwer
+1962), p. 235, référence ajoutée par nous) 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 6
+9.5. Les références aux sources non bibliques
+ Toutes les citations non bibliques doivent être annotées dans les notes de bas de page,
+selon les usages relatifs aux références bibliographiques exposés dans les Directives
+du Corpus Christianorum
+(http://www.corpuschristianorum.org/series/pdf/Corpus_Directives.pdf).
+L’orthographe
+10. Les mots et les noms grecs ou latins
+ Les mots grecs qui sont cités dans la traduction doivent être translittérés
+conformément aux normes exposées dans les ALA-LC 1997 Romanization Tables
+(‘Classical Greek’): par suite, nous écrivons oikouménē, et nous n’écrivons ni
+oecumene ni οἰκουµένη.1
+Pour écrire les mots latins, il est recommandé d’employer la même orthographe que
+celle de la collection Corpus Christianorum, p. ex. non verbum mais uerbum. Veuillez
+consulter la section 40 des Directives du Corpus Christianorum pour davantage
+d’information.
+Les noms propres, les noms de lieux, et cetera doivent être orthographiés dans la
+forme la plus courante de la langue cible, p. ex. saint Augustin, Carthage pour
+Augustinus, Carthago.
+Les notes en bas de page
+11.1. Objectif
+ Dans la série Corpus Christianorum in Translation les lignes ne sont pas numérotées,
+et il faut employer des notes en bas de page (non des notes de fin) pour commenter le
+texte. Les notes de bas de page serviront à expliquer les allusions et les termes
+techniques du texte qui ne seraient pas immédiatement compréhensibles pour un
+lecteur moderne, non spécialiste. Les difficultés d’interprétation spécifique (comme des
+lectures différentes ou des ambiguïtés dans la formulation originale) doivent aussi être
+indiquées dans les notes, alors que des problèmes plus généraux de traduction et
+d’interprétation doivent être abordés dans l’introduction. Finalement, les notes doivent
+servir à repérer des citations précises tirées de sources autres que la Bible.
+11.2. Espace alloué
+ Idéalement, les notes de bas de page ne devraient pas occuper plus de cinq lignes par
+page en tout. Le style télégraphique doit être proscrit. Si le texte exige une élucidation
+plus étendue, l’éventualité d’un commentaire suivant au texte pourra être soumis à la
+maison d’édition.
+Les éléments structurels
+12.1. Le rapport à la structure de l’édition critique
+ La cohérence entre la traduction et le texte source du volume de la collection Corpus
+Christianorum doit être rendue explicite en incorporant les éléments structurels de
+l’édition (divisions en volumes, chapitres, numéros de section, et cetera) dans la
+traduction.
+Pour rendre possible la référence facile du texte grec ou latin à la traduction et vice
+versa, les numéros des chapitres, des paragraphes, et cetera de l’édition doivent être
+
+1
+ Les tableaux sont consultables à cette adresse: http://www.loc.gov/catdir/cpso/romanization/greek.pdf
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 7
+incorporés à la traduction. Les numéros des pages de l’édition seront indiqués en
+marge de la version finale de la traduction correspondante. Ces numéros de page
+doivent être indiqués par le traducteur dans le texte du manuscrit par les codes ‘$1’ et
+‘$2’. La référence est insérée dans le texte entre ces codes. Ce procédé est analogue
+aux usages des collections CC (voir les Directives du Corpus Christianorum, sections
+35 sqq.). Étant donné les différences syntaxiques entre les langues source et cible,
+dans la plupart des cas, le passage d’une page à l’autre sera nécessairement fluctuant,
+et l’emplacement exact des codes est laissé à la discrétion du traducteur. Ce problème
+de fluidité est en grande partie résolu dans l’état final, où les références sont placées
+dans les marges et où aucun signe apparent n’est visible à l’intérieur du corps du
+texte.
+p. ex. Comme dit $175$2 l’Apôtre Paul
+aboutit à: Comme dit l’Apôtre Paul 75
+12.2. Les titres additionnels
+ La pertinence d’ajouter des titres additionnels à la traduction doit être discutée avec le
+« publishing manager ».
+12.3. Les index
+ Les index doivent être établis indépendamment de ceux qui existent dans l’édition
+critique. Nous suggérons au traducteur d’utiliser la fonction de création d’index dans
+Word pour établir ces index. Les index se réfèrent non seulement au texte traduit,
+mais aussi à l’introduction, aux notes et, le cas échéant, au commentaire. Pour le
+moins, il faut faire figurer les index suivants:
+- un index des références de la Bible
+- un index des sources non bibliques
+- un index des thèmes
+- un index des noms propres et des noms de lieux.
+12.4. Les index des sources
+ Les index des sources bibliques et non bibliques s’appliquent seulement aux citations
+littérales ; voir plus haut la section 9.
+Les sources anciennes doivent être indiquées avec leur titre en grec ou en latin sous la
+forme qui est le plus couramment utilisée. Éventuellement, on pourra faire suivre le
+titre par une traduction entre parenthèses. Les deux s’écrivent en italiques. Ils sont
+suivis d’une référence et du numéro de la page correspondante dans la traduction:
+Cicero
+De divinatione (De la divination)
+2, 30 167
+Les livres de la Bible doivent porter leur nom le plus courant dans la langue cible, sans
+italiques, p. ex.:
+Psaumes
+37, 11 206
+12.5. Thèmes et noms propres
+ Même si tous les index doivent être établis avec le plus grand soin, l’index des noms
+propres et l’index des thèmes ont une extrême importance, car ils permettront aux
+lecteurs de découvrir la matière contenue dans le texte.
+La bibliographie
+13. Pour toute question concernant les entrées bibliographiques, veuillez vous reporter aux 
+Directives CCT Version 1.1 Mars 2009
+(c) 2009 Brepols Publishers (Turnhout – Belgique). Tous droits réservés. 8
+sections 8 à 33 (31 excepté) des Directives du Corpus Christianorum. Ne pas oubliez
+d’ajouter une table des abréviations. Pour les références, conformez-vous aux
+méthodes conventionnelles de la langue cible, et veillez à la consistance du système de
+références.
+Les appendices
+14. La création éventuelle d’appendices qui peuvent apporter des compléments à la
+compréhension du texte, p. ex. en fournissant des cartes géographiques ou des listes
+chronologiques, doit être préalablement soumise au comité éditorial. 

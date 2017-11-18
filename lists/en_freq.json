@@ -1,0 +1,142 @@
+[
+    {
+        "char": " ",
+        "count": 46,
+        "frequency": 0.0019
+    },
+    {
+        "char": "a",
+        "count": 2014,
+        "frequency": 0.0834
+    },
+    {
+        "char": "b",
+        "count": 375,
+        "frequency": 0.0155
+    },
+    {
+        "char": "c",
+        "count": 865,
+        "frequency": 0.0358
+    },
+    {
+        "char": "d",
+        "count": 674,
+        "frequency": 0.0279
+    },
+    {
+        "char": "e",
+        "count": 2936,
+        "frequency": 0.1216
+    },
+    {
+        "char": "é",
+        "count": 1,
+        "frequency": 0
+    },
+    {
+        "char": "f",
+        "count": 482,
+        "frequency": 0.02
+    },
+    {
+        "char": "g",
+        "count": 406,
+        "frequency": 0.0168
+    },
+    {
+        "char": "h",
+        "count": 1313,
+        "frequency": 0.0544
+    },
+    {
+        "char": "i",
+        "count": 1824,
+        "frequency": 0.0756
+    },
+    {
+        "char": "j",
+        "count": 40,
+        "frequency": 0.0017
+    },
+    {
+        "char": "k",
+        "count": 95,
+        "frequency": 0.0039
+    },
+    {
+        "char": "l",
+        "count": 1161,
+        "frequency": 0.0481
+    },
+    {
+        "char": "m",
+        "count": 528,
+        "frequency": 0.0219
+    },
+    {
+        "char": "n",
+        "count": 1607,
+        "frequency": 0.0666
+    },
+    {
+        "char": "o",
+        "count": 1948,
+        "frequency": 0.0807
+    },
+    {
+        "char": "p",
+        "count": 568,
+        "frequency": 0.0235
+    },
+    {
+        "char": "q",
+        "count": 49,
+        "frequency": 0.002
+    },
+    {
+        "char": "r",
+        "count": 1322,
+        "frequency": 0.0548
+    },
+    {
+        "char": "s",
+        "count": 1765,
+        "frequency": 0.0731
+    },
+    {
+        "char": "t",
+        "count": 2363,
+        "frequency": 0.0979
+    },
+    {
+        "char": "u",
+        "count": 627,
+        "frequency": 0.026
+    },
+    {
+        "char": "v",
+        "count": 289,
+        "frequency": 0.012
+    },
+    {
+        "char": "w",
+        "count": 391,
+        "frequency": 0.0162
+    },
+    {
+        "char": "x",
+        "count": 48,
+        "frequency": 0.002
+    },
+    {
+        "char": "y",
+        "count": 392,
+        "frequency": 0.0162
+    },
+    {
+        "char": "z",
+        "count": 11,
+        "frequency": 0.0005
+    }
+]

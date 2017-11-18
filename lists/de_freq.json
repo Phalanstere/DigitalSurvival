@@ -2,166 +2,166 @@
     {
         "char": "a",
         "count": 1455,
-        "frequency": 0.056535592166614856
+        "frequency": 0.0565
     },
     {
         "char": "à",
         "count": 1,
-        "frequency": 0.000038856077090456945
+        "frequency": 0
     },
     {
         "char": "ä",
         "count": 133,
-        "frequency": 0.005167858253030774
+        "frequency": 0.0052
     },
     {
         "char": "b",
         "count": 453,
-        "frequency": 0.017601802921976998
+        "frequency": 0.0176
     },
     {
         "char": "c",
         "count": 824,
-        "frequency": 0.032017407522536526
+        "frequency": 0.032
     },
     {
         "char": "d",
         "count": 1217,
-        "frequency": 0.047287845819086106
+        "frequency": 0.0473
     },
     {
         "char": "e",
         "count": 4175,
-        "frequency": 0.16222412185265775
+        "frequency": 0.1622
     },
     {
         "char": "é",
         "count": 1,
-        "frequency": 0.000038856077090456945
+        "frequency": 0
     },
     {
         "char": "è",
         "count": 3,
-        "frequency": 0.00011656823127137084
+        "frequency": 0.0001
     },
     {
         "char": "f",
         "count": 368,
-        "frequency": 0.014299036369288157
+        "frequency": 0.0143
     },
     {
         "char": "g",
         "count": 769,
-        "frequency": 0.02988032328256139
+        "frequency": 0.0299
     },
     {
         "char": "h",
         "count": 1277,
-        "frequency": 0.04961921044451352
+        "frequency": 0.0496
     },
     {
         "char": "i",
         "count": 2287,
-        "frequency": 0.08886384830587504
+        "frequency": 0.0889
     },
     {
         "char": "j",
         "count": 51,
-        "frequency": 0.0019816599316133045
+        "frequency": 0.002
     },
     {
         "char": "k",
         "count": 326,
-        "frequency": 0.012667081131488966
+        "frequency": 0.0127
     },
     {
         "char": "l",
         "count": 924,
-        "frequency": 0.03590301523158222
+        "frequency": 0.0359
     },
     {
         "char": "m",
         "count": 812,
-        "frequency": 0.03155113459745104
+        "frequency": 0.0316
     },
     {
         "char": "n",
         "count": 2474,
-        "frequency": 0.09612993472179049
+        "frequency": 0.0961
     },
     {
         "char": "o",
         "count": 676,
-        "frequency": 0.026266708113148896
+        "frequency": 0.0263
     },
     {
         "char": "ö",
         "count": 70,
-        "frequency": 0.0027199253963319865
+        "frequency": 0.0027
     },
     {
         "char": "p",
         "count": 249,
-        "frequency": 0.00967516319552378
+        "frequency": 0.0097
     },
     {
         "char": "q",
         "count": 3,
-        "frequency": 0.00011656823127137084
+        "frequency": 0.0001
     },
     {
         "char": "r",
         "count": 1653,
-        "frequency": 0.06422909543052534
+        "frequency": 0.0642
     },
     {
         "char": "s",
         "count": 2009,
-        "frequency": 0.07806185887472801
+        "frequency": 0.0781
     },
     {
         "char": "ß",
         "count": 30,
-        "frequency": 0.0011656823127137084
+        "frequency": 0.0012
     },
     {
         "char": "t",
         "count": 1557,
-        "frequency": 0.060498912029841465
+        "frequency": 0.0605
     },
     {
         "char": "u",
         "count": 889,
-        "frequency": 0.034543052533416226
+        "frequency": 0.0345
     },
     {
         "char": "ü",
         "count": 121,
-        "frequency": 0.004701585327945291
+        "frequency": 0.0047
     },
     {
         "char": "v",
         "count": 194,
-        "frequency": 0.007538078955548648
+        "frequency": 0.0075
     },
     {
         "char": "w",
         "count": 402,
-        "frequency": 0.015620142990363692
+        "frequency": 0.0156
     },
     {
         "char": "x",
         "count": 12,
-        "frequency": 0.00046627292508548337
+        "frequency": 0.0005
     },
     {
         "char": "y",
         "count": 49,
-        "frequency": 0.0019039477774323904
+        "frequency": 0.0019
     },
     {
         "char": "z",
         "count": 272,
-        "frequency": 0.010568852968604289
+        "frequency": 0.0106
     }
 ]

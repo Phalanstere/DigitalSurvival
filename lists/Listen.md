@@ -332,13 +332,12 @@ function compare ( actual, model, tolerance)
 Um vergleichen zu können, müssen wir allerdings eine Suchfunktion haben, die die Frequenzwerte des entsprechenden Buchstabens aus unserem Modell herausholt. Dazu schreiben wir eine kleine Hilfsfunktions namens **scan_model**. Sie durchsucht unser Modell und gibt den entsprechenden Wert aus der Liste zurück:
 
 ```javascript
-function scan_model ( char, model ) 
-    for (var i = 0; i < model.legth; >) {
-        if ( model[ i ].char === char ) return model[ i ];
-
-        // und jetzt sollte der Vergleich folgen
+    function scan_model ( char, model ) {
+        for (var n = 0; n < model.length; n++ ) {
+           var item = model[n];
+            if ( model[ n ].char === char ) return model[ n ];      
+        }
     }
-}
 ``` 
 
 Mit dieser Funktion können wir in unserer **compare** Funktion weiterarbeiten:
@@ -369,23 +368,23 @@ oder ist er größer als die **upper_rtange**, muss das Modell als solches falsc
 
 
 ```javascript
-function compare ( actual, model, tolerance) 
-    var valid = true; 
+    function compare ( actual, model, tolerance) {
+       var valid = true; 
+        for (var i = 0; i < actual.length; i++) {
+            var item = actual[ i ];
+            var model_item = scan_model( item.char, model );
+   
+            if ( model_item) {                   // wir wollen sicherstellen, dass das Item existiert
+                var upper_range = model_item.frequency + tolerance;
+                var lower_range = model_item.frequency - tolerance;
+                if ( item.frequency < lower_range || item.frequency > upper_range) valid = false;
+            }
 
-    for (var i = 0; i < actual.legth; i++) {
-        var item = actual[ i ];
-        var model_item = scan_model( item.char );
-        // Jetzt der Vergleich
-        if ( item.frequency < lower_range || item.frequency > upper.range) valid = false;
-
+        }
+    return valid;
     }
 
-return valid;
-}
-
 ``` 
-
-
 
 
 Insgesamt ergibt sich folgender Code:
@@ -456,4 +455,8 @@ function letter_frequency( text ) {
     
 
     var list = letter_frequency(de);
+
+
     ``` 
+
+

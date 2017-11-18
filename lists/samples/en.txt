@@ -1,0 +1,157 @@
+Philosophy 1100 Honors
+Introduction to Ethics
+Lecture 1 – Introductory Discussion – Part 1
+Ethics, Philosophy, Religion, and Critical Thinking
+An Overview of the Introductory Material:  The Main Topics
+1.  The Origin of Philosophy
+2.  Ethics as a Branch of Philosophy
+3.  The Nature of Philosophy
+4.  The Nature of Ethics 
+5.   Meta-Ethics and Normative Ethics
+6.   The Focus in this Course
+7.   How Can this Approach Possibly Work? 
+8.    The Socratic Challenge and the Unexamined Life
+9.    Some Important Beliefs about the Nature of the World
+10.  Could Some of Your Most Important Beliefs Be False?
+11.  The Relation between God and Objective Moral Values
+12.  Are There Revealed Truths? 
+1. The Origin of Philosophy
+         Philosophy originated in Greek society, during a period when science began, when there were very great discoveries and advances indeed in mathematics, achieved by people such as Pythagoras (569?-500? B.C.), Zeno (495-435 B.C.), Eudoxus (408-355 B.C.), Euclid (330?-275? B.C.), and Archimedes (287-212 B.C.), and when democracy also originated.
+The Three Greatest Greek Philosophers 
+Socrates  (469-399 B.C.)
+         Socrates did not himself write anything.  He questioned people, raising philosophical issues, especially about the nature of the good life.  He was charged with not respecting the gods, and with corrupting the young, and he was sentenced to death.  He died by drinking hemlock.  He was Plato's teacher, and our knowledge of Socrates is based mainly upon Plato's dialogues, especially the early, 'Socratic' ones.
+If Socrates did not write, what did he do?  The answer is that he went about questioning people, raising philosophical issues, especially of an ethical sort, and then showing that the answers that people offered did not really stand up under critical scrutiny.  Thus he posed questions about such things as the nature of justice, of piety, and of the good life, and about whether a person can ever knowingly do something that he or she believes to be wrong.
+Socrates believed that people who thought that they knew the answers to such questions were on the whole laboring under an illusion, and so it was his goal to convince people that this was the case, the idea being that people would then be motivated to attempt to find the answers to those crucial questions.
+Many people, however, did not react favorably to Socrates' attempt to convince people that they did not know things they thought they knew, and they thought that Socrates' activities tended to undermine society's values.  As a result, Socrates was in the end charged with not respecting the gods, and with corrupting the young, and he was sentenced to death.  He died by drinking hemlock.
+Plato  (426-347 B.C.)
+        Plato wrote many dialogues.  In all of them his teacher, Socrates, was the central figure.  The early dialogues focus upon ethics, and are generally thought to provide an accurate account of Socrates' own views.  In later dialogues, however, the figure of Socrates becomes a spokesman for Plato, and the range of philosophical discussion is greatly expanded: rather than focusing almost entirely on ethical questions, later dialogues address topics in metaphysics, in theory of knowledge, in philosophy of mind, in logic and philosophy of language, and in social and political theory.
+Especially striking as regards philosophical breadth is The Republic - one of Plato's most famous dialogues.  There Plato's central focus is upon the question of what the ideal society would be like, and he argues, among other things, that the best society will not be a democracy:  the best should rule, where the best will be those who possess the rights traits of character, and the relevant knowledge.  But in pursuing this question in social and political philosophy of what the ideal society would be like, Plato also (1) discusses the ethical question of the nature of the good life, (2) advances a theory of the nature of the mind (or soul), (3) raises metaphysical questions about whether the world that we perceive is what is most real, and (4) asks whether one can have true knowledge concerning the world of sense perception or whether, on the contrary, true knowledge is concerned instead with some intelligible, non-sensible world of forms that lies beyond the world of sense perception.
+Aristotle (384-322 B.C.) 
+ Aristotle was a student of Plato, and like Plato, he had a very strong interest in ethics, and in social and political philosophy.  Thus, two of Aristotle's most famous books are the Politics and the Nicomachean Ethics.  In the former, Aristotle discusses how society should be organized, and in the latter he discusses the nature of the good life, arguing that eudaimonia (total well-being, or happiness) is the highest human good,  He also puts forward, in that book, a theory of the virtues, part of which involves the idea that each virtue is a mean between two extremes.  (Thus courage, for example, is supposed to be a mean between cowardliness on the one hand, and foolhardiness on the other.)  
+Like Plato, however, Aristotle was interested in all of philosophy.  Thus he wrote about the nature of the mind (or soul); he wrote about knowledge and sense perception; he addressed questions in metaphysics about the ultimate nature of the world, and the existence of a prime mover.
+Aristotle also investigated logic in a very systematic way, and he developed a theory of what are called syllogistic arguments that distinguished between those arguments that are logically correct (or valid) and those that are not.  This theory endured for over 2100 years, with very few significant advances being made until well into the 19th century.  
+Historical Remark on the Future Development of Logic
+         Significant contributions to the development in logic were made in the 19th century by George Boole (1815-1864), and by Augustus De Morgan.  The great transformation in logic was made, however, by Gottlob Frege (1848-1925), who, with the publication of his Begriffsschrift in 1879 produced "the first really comprehensive system of formal logic,"1 and a system that went far beyond Aristotle's syllogistic logic.
+The most important of Frege's ideas was that of using what are called quantifiers to bind variables in order to formulate precisely, an in a fully general way, the propositions that are expressed by English sentences containing words such as "all", "some", and "no".  The Kneales remark that " it is no exaggeration to say that the use of quantifiers to bind variables was one of the greatest intellectual inventions of the nineteenth century."  They also say that "Frege's work . . .  contains all the essentials of modern logic, and it is not unfair either to his predecessors or to his successors to say that 1879 is the most important date in the history of the subject."  (Ibid. p. 511)
+Returning to Aristotle: Aristotle’s Interest in Science
+         Aristotle's interests were, however, even broader than Plato's, since Aristotle was also very interested in science - specifically, both physics and biology.  In the case of biology, it may well be that Aristotle examined more species of living things than anyone until the time of Charles Darwin.  (Aristotle's most famous student was not a philosopher, but a general and a ruler - Alexander the Great – whose work of conquering other countries required that he travel a great deal, and who either sent back specimens of animals from other lands - including many marine animals - or else provided Aristotle with detailed reports of observations of animals made by others.) 
+Finally, in the case of physics, Aristotle's views completely dominated the intellectual landscape for over 1800 years, until the time of Galileo (1564-1642).
+2. Ethics as a Branch of Philosophy
+As one can see from the above, ethics, as a branch of philosophy, is not a new discipline: it began with Socrates, over 2400 years ago, and it was one of the central interests of the two other Greek philosophers who are generally considered two of the greatest philosophers who have ever lived - Plato and Aristotle.
+This development, moreover, represented an enormous break with what had existed previously.  For, before Socrates, ethics was almost invariably associated with religion, with moral rules being regarded as laws handed down by a deity, with right and wrong being a matter of divine injunctions and prohibitions - such as in the case of the Ten Commandments, which were held by the Jews to have been handed down to Moses on tablets of stone given to him by Yahweh.
+The idea that moral truths are to be arrived at by some process of thought and rational reflection challenges this view that moral truths must come from a deity, and in doing so it raises an issue that is very important indeed:  
+    Should one look to religion for answers to moral questions, and, if so, which religion?  Or should one turn instead to philosophy?
+This issue is, moreover, one that is very much alive today, as many people continue to maintain that we should turn to religion - or, rather, to some particular religion - rather than to philosophy, if we want to know what moral principles to accept.
+3.  The Nature of Philosophy
+What is philosophy?
+Philosophy, both as it has been practiced since the time of Socrates, and as it is practiced today, involves at least the following four activities.
+(1) The Justification of Basic Beliefs
+         Philosophers are concerned with whether various basic human beliefs are justified, and, if so, precisely how.
+Some Examples
+1.  Are we really aware of an external world?  Or are we perhaps instead in the type of situation that existed in the movie, The Matrix?  Or simply enjoying a very long dream? 
+2.  Can we know that other humans also have minds, that they are conscious, that they have thoughts, feelings, and experiences?  Or is it possible, for all we know, that other humans are mere automata?  Similarly, can we know that non-human animals have experiences, that they experience pleasure and pain?  (The French philosopher, René Descartes (1596-1650), argued for the view that non-human animals were mere automata.) 
+3.  Are we justified in believing that we are really free, or is it perhaps the case that all human behavior is completely determined, so that no one can ever do anything other than what he or she in fact does do? 
+4.  Are there objective standards of right and wrong?  Are there absolute values that are part of the very fabric of reality?  Or are there simply moral beliefs that have largely resulted from conditioning by society? 
+5.  Is it true - as most people seem to believe - that we survive bodily death - either because humans have immaterial, immortal souls, or because we will at some point in the future be resurrected?  Or is bodily death the final end of an individual's existence? 
+6.  Was the physical universe created by a very intelligent and powerful, supernatural being?  Or is it perhaps true that the physical universe of space and time is the totality of what exists? 
+ (2) The Analysis of Fundamental Concepts
+         Philosophers are also concerned with the clarification and the analysis of the fundamental concepts that enter into basic human beliefs - such as the concept of a physical object, of space and time, of the mind, of consciousness, of freedom, of right and wrong, etc.
+(3) The Discovery of Necessary Truths
+         A related activity concerns the relation between fundamental concepts: philosophers attempt to establish truths involving those concepts that could not be otherwise, truths that are necessary.
+Some Examples
+1.  In science fiction stories - such as The Terminator - people sometimes travel backwards into the past.  Many philosophers have been interested in how the concept of causation is related to the idea of being earlier than, and some have claimed that it is logically impossible for a cause to be later than its effect.  If this is right, then time travel is impossible, since time travel involves causes that occur later than their effects.  (The person who travels back into the past remembers events that happen later on, in the future, so those later events are causes of the memories he has at the earlier time in the past.) 
+2.  How is the concept of the mind related to the concept of physical objects and events?  Is it logically possible - as many philosophers and scientists today claim - that the mind is just the brain, and that consciousness is just a neural process?  Or is it logically impossible, as other philosophers have claimed, for the mental to be identical with anything physical? 
+(4) The Development of a Systematic Overview - a Synoptic View - of Reality as a Whole
+         The basic goal here is to arrive at a picture of reality as a whole that is both comprehensive and plausible. Doing this may turn out to be considerably more difficult than one would initially think.
+One Illustration:  The Nature of the Mind, and its Place in Reality 
+Consider physics.  Its goal is to provide a complete account of physical reality  - including both all of the fundamental particles and forces that make up the physical world, and all of the laws that govern those forces, and the interactions of fundamental particles.  But how does the mind fit into this picture?  Is it something more, something non-physical?  If it is, does it act upon the physical world?  Do particles in one’s brain behave differently because of the causal impact of one’s mind upon those particles?  If so, then physics is not the complete story about the behavior of the things, such as electrons, that make up the physical world.  So isn't there a serious tension, at the very least, between what physicists tell us about the physical world, and beliefs that most of us have about ourselves? 
+Another Illustration:  Human Freedom and Moral Responsibility, and the Determinism of Newtonian Physics 
+In some cases, there may be more than tension:  beliefs in different areas may be, or at least appear to be, inconsistent with one another.  As an illustration, suppose that one were living in the 19th Century.  On the one hand, one would be confronted with a very remarkable scientific achievement - Newtonian physics - that explained an extraordinary range of phenomena, and that did so very, very precisely.  Newtonian physics is, however, completely deterministic: given the positions and the velocities of every fundamental particle at some specific time, the positions and the velocities of everything at any other time follow in virtue of the laws of Newtonian physics.  But on the other hand, you might also have been strongly inclined to believe that you were free in a significant way - so that you had the power, for example, either to hold on to the pen that you're now holding for another ten seconds, or to let it go instead.  But if Newtonian physics were true, could you be free in that way?  Could you have the power freely to choose to do either of those things? 
+     There are various ways of attempting to resolve this inconsistency, or apparent inconsistency.  One is to say that there is not really any inconsistency, on the grounds that when the term "free" is correctly analyzed, it turns out that freedom is perfectly compatible with complete determinism.  But another way is to give up one of the beliefs in question: either one could conclude that Newtonian physics is at best an approximation to the truth, and that the truth about the physical world is that it is not completely deterministic - a conclusion that would receive support when you moved into the 20th century, with the development of quantum mechanics - or else one could conclude that freedom is really an illusion that arises because one is not aware of the very small events that cause one's behavior, and that in fact one is not really free. 
+4.  The Nature of Ethics
+Ethics is a branch of philosophy, and the four activities just mentioned are central to ethics as well.
+(1) Justification Questions
+1.  Can one be justified in believing that there are objective moral values?
+2.  If one can be, can one acquire knowledge of such values, and if so, how?
+3.  If we can acquire such knowledge, what basic moral principles are in fact the correct ones?
+(2) Questions of Analysis
+1.  What does it mean to say that an action is morally wrong?  Or that it is morally permissible?
+2.  What does it mean to say that some state of affairs is good or desirable, or that it is bad or undesirable? 
+ (3) Questions Concerning Necessary Truths
+1.  Is it a necessary truth that the morally right action is the one that leads to the best balance of good states of affairs over bad states of affairs?
+2.  Is it a necessary truth that only pleasure is intrinsically good - good in itself - and that only pain is intrinsically bad?
+3.  Is it a necessary truth that an action that is forbidden by an omnipotent and omniscient creator of the universe is necessarily morally wrong, and ought not to be done? 
+ (4) Questions Concerning the Metaphysics of Value, the Place of Values in Reality
+         We inhabit a physical world in space and time.  If there are objective values, how do they fit into things?
+1.  Do objective values exist somewhere in space and time? Are they, perhaps, non-natural properties of actions and states of affairs, as the English philosopher G. E. Moore believed?  Or do they instead exist in some non-spatial, non-temporal realm - as Plato believed?  Or do they exist in the mind of God, as some religious thinkers have claimed?
+2.  How do we acquire knowledge of objective values?  Do they causally act upon our minds?  If so, then things in the physical world are affected not just by physical forces – as most physicists appear to believe – nor even just by physical forces plus minds: objective values also exert at least an indirect influence, via their influence upon minds, and upon our beliefs about right and wrong.
+5.  Meta-Ethics and Normative Ethics
+         Meta-ethics is the branch of philosophy that is concerned with:
+(1) The analysis of ethical concepts;
+(2) Necessary truths involving such concepts;
+(3) The metaphysics of value;
+(4) The most general questions about the justification of ethical beliefs.
+Normative ethics, on the other hand, is concerned with setting out correct principles concerning the rightness and wrongness of actions, and the goodness and badness of states of affairs. Sometimes the goal is the highly theoretical one of constructing a general ethical theory that contains all of the basic moral principles.  Sometimes, however, the focus is upon much more specific questions - such as whether premarital sex, or physician-assisted suicide, or late-term abortion, is morally permissible.
+One can distinguish, then, between high-level normative ethics and low-level normative ethics.  For some moral principles may be more basic than others.  Whether, given two moral principles M and N that a given person accepts, M is for that person a more basic principle than N depends upon the person’s overall moral theory. 
+Illustration
+ Consider the case of adultery.  Someone might think, for example, that the reason that adultery is wrong is that it involves breaking a promise, and that the reason that breaking a promise is wrong is that it hurts someone.  For such people, the moral principle that
+(1) It is wrong to commit adultery
+would be based upon, and so would be less basic than, the principle that
+(2) It is wrong to break a promise
+and that principle in turn would be based upon, and so would be less basic than, the principle that
+(3) It is wrong to hurt someone. 
+6.  The Focus in this Course
+In this course we shall not be tackling issues in meta-ethics.  We shall not be concerned with the analysis of ethical statements.  We shall not attempt to arrive at necessary truths involving ethical concepts.  We shall not consider whether there really are objective values.  We shall not reflect upon the metaphysics of value.
+     Nor shall we attempt to construct a sound, general moral theory that would, in principle, supply answers to all of one's ethical questions.
+     Our focus will instead be upon a number of detailed moral issues.  We shall, then, be doing low-level normative ethics' rather than either meta-ethics or high-level normative ethics. 
+7.  How Can Such an Approach Possibly Work?
+But can such an approach really be sound?  For, in the first place, unless one has addressed the meta-ethical questions of whether there really are objective moral values, and of whether one can have knowledge of such values, isn't normative ethics a sham and a fraud?  In the second place, how can one usefully tackle lower-level normative questions until one has established which general principles are correct?  How can one tackle detailed ethical questions except by applying correct basic moral principles to those detailed issues?
+It is certainly true that the ideal approach would involve, first, tackling the meta-ethical issues, establishing that there are objective moral values, and showing that it is possible to have knowledge of such values; secondly, using the method that one has just shown to be correct to arrive at a general theory that contains all correct basic moral principles; and, thirdly, then applying that general theory to arrive at the correct answers to specific, lower-level questions.
+But the problems are, first, that no philosopher has yet advanced an argument for the conclusion that there are objective values that has gained anything like general acceptance, and, secondly, that even among philosophers who believe that there are objective values, there is great disagreement about how one can establish what the correct moral principles are.
+Not a happy state of affairs!  But if that's the way things are, then isn't one forced to conclude that, at present, it is a waste of time doing low-level normative ethics?
+The answer is ‘No’, and the reason is this.  Low-level normative ethics does not depend upon a solution to these high-level ethical issues.  How can this be?  The answer is that the application of techniques of critical thinking can often provide a person with good reasons for changing his or her moral beliefs.
+How can techniques of critical thinking do this?
+7.1 The Big Picture: Two Possibilities
+ When people disagree about some moral issue, there are two very different sources of their disagreement:
+Moral Disagreement about Claim M
+(1) Disagreement about(2) Disagreement Based upon
+some Basic Moral ClaimDisagreement about some Non-Moral,
+Purely Factual Claim
+Some moral claims that one accepts are such that, if one is asked to offer an argument in support of them, one will say that one cannot do this, because the moral claim in question is a rock-bottom moral claim – a basic moral claim that does not rest upon any deeper moral claim.
+In the case of other moral claims, however, one will be able to offer an argument.  Thus most people, for example, if asked why it is generally wrong to kick a dog, would probably say something like the following:
+(1) It is wrong to cause needless pain.
+(2) Kicking a dog causes it pain.
+(3) That pain is generally not needed for some greater good, or to avoid some greater evil.
+Therefore:
+(4) It is generally wrong to kick a dog.
+The thing to notice about this justification is that while it involves a moral claim, since statement (1) – It is wrong to cause needless pain – is a moral claim, the justification also involves a statement that is not a moral claim, namely, (2) Kicking a dog causes it pain – the latter being a claim about a causal connection between a purely physical state and a resulting psychological state.
+The fact is that the vast majority of the moral beliefs that most of us accept have this feature of being derived from a combination of some more basic moral claim together with a non-moral claim whose content is purely factual.  In the case just mentioned, the non-moral claim – viz. that kicking a dog causes it pain – is not very controversial.  But many of the derived moral claims that people accept rest upon non-moral claims that are far from uncontroversial.  The result is that by showing that a person accepts a moral claim that is based upon some non-moral premise that there is good reason to believe is false, one can give the person a good reason for abandoning the moral claim in question.
+What if the moral claim that one is considering is a basic claim for that person?  Then a different type of method has to be used if one is to be able to give the person a reason for abandoning the claim in question.  The basic idea here is that one may be able to show that the person has other moral intuitions that are inconsistent with the moral claim in question. Let us begin by considering, then, that situation.
+7.2  The First Possibility:  A Person Has Potentially Inconsistent Moral Beliefs
+This possibility arises because people often have potential moral beliefs that conflict with their actual moral beliefs.  What I have in mind here is that people may, on the one hand, believe that all actions of a certain type are wrong, but there may be cases of such an action that, if they were to consider the case, they would not think that the action was wrong.  Or they may believe that all things of a certain sort are desirable, or good, but when confronted a certain thing of that sort, find that they do not believe that the thing in that particular case is desirable, or good.
+Here's an illustration of how that can work.
+Question:  What do you think about the following claim?
+"Pleasurable activities may have bad consequences, but pleasure in itself is always good."
+Class Discussion.
+Next, consider the following question:
+"Are there any crucial, potential counterexamples to the claim that pleasure in itself is always good?"
+One type of plausible counterexample involves the case of sadistic pleasure.  Compare, for example, a serial killer who gets great pleasure from killing people with a serial killer who gets only mild enjoyment.  Is the world a better place if it has the former sort of serial killer than if it has the latter sort – assuming that each will kill the same number of people?  Most people, I suggest, will think that the first of these alternatives does not make the world a better place, even though it means that the world contains more pleasure.
+If one shares that view, and if one initially thought that pleasure in itself is always good, one now has a reason to abandon that view.  What has happened is that a type of case that one did not consider when one initially formed the judgment that pleasure in itself is always good is such that when one does consider the case, one judges that pleasure of that sort does not make the world a better place.
+Other illustrations will emerge when we discuss various topics.  In the case of euthanasia, for example, we will consider a case involving a so-called trolley problem, and a situation involving a resourceful doctor.   
+7.3  A Second Possibility:  Moral Beliefs that Are Based Upon Non-Moral Beliefs that Turn out to be False
+The first possibility for the application of a critical thinking technique can be used both in the case of moral beliefs that are basic for an individual, and for ones that are not.  This second possibility, by contrast, is connected with the fact that not all moral beliefs are basic.  Some moral beliefs rest upon beliefs concerning non-moral facts, and when this is so for a particular moral belief, the idea is that  if those non-moral beliefs turn out to be false, that will destroy the basis of the moral belief that rests upon those non-moral beliefs.
+Some Illustrations
+(1) An Abortion Illustration
+Consider the case of someone who thinks that abortion is always wrong because, and only because, there is an immaterial soul present in human beings from conception.  If it turns out that there is good reason to reject the belief that there is an immaterial soul present in human beings from conception, exposure to that fact will give the person in question a good reason to abandon the belief that abortion is always wrong because the person we are considering accepts that belief only because he or she believes that there is an immaterial soul present in human beings from conception.
+(2) Premarital Sex
+As we’ll see when we turn to the topic of sexual morality,  a number of people today attempt to argue for the view that sex before marriage is morally wrong by appealing to a combination of the empirical claim that premarital sex leads to the transmission of STD that result in great suffering, and sometimes death, along with the normative claim that many of those consequences are very undesirable.
+(3) Legalizing Voluntary Active Euthanasia
+Similarly, when we consider the question of whether voluntary active euthanasia should be legalized, we’ll encounter arguments – such as the “wedge”, or “slippery slope argument” – that attempt to show that legalizing voluntary active euthanasia is likely to have certain consequences – consequences that most people would agree are not at all desirable.
+(4) Legalizing Prostitution
+Another illustration arises in the case of prostitution, where many people – especially here in America – argue against the legalization of prostitution on the grounds that doing so would be likely to lead to bad consequences.
+(5) Sex Education
+A very contentious issue in this country is the form that sex education should take:  Should schools go with “abstinence only” sex education, or with what is generally called “comprehensive” sex education?  Under George W. Bush’s presidency, the government advocated the latter, and one of the main grounds that people offered in support of that option is that it would result in less teenage sex, and so in fewer STDs and in fewer children being born outside of marriage.
+ (6) Legalizing Drugs
+Though it is not a topic we’ll be considering, many people argue against the idea of legalizing various drugs – such as LSD, or marijuana – by appealing to what they claim are the likely consequences of doing so.
+(7) The Moral Status of Animals
+Some disagreements about the moral status of animals also rest upon non- moral claims.  Thus, we shall see that, on the one hand, R. G. Frey maintains that animals do not have beliefs and desires, and therefore do not have any moral status, whereas, on the other hand, Tom Regan argues that mammals have rights, including a right to life, on the ground that they have not only beliefs and desires, but also higher mental states, such as self-consciousness.
