@@ -39,7 +39,7 @@ Und um es anzeigen zu lassen:
 console.log( a[2] );
 ```
 
-Warum steht hier eine 2 - und keine 3? Die Erklärung ist, dass man be Arrays grundsätzlich bei der Nullstelle zu zählen beginnt:
+Warum steht hier eine 2 - und keine 3? Die Erklärung ist, dass man bei Arrays grundsätzlich bei der Nullstelle zu zählen beginnt:
 
 ```javascript
 var a = ['Konto kündigen', 1, 3.124, {} ];
@@ -50,7 +50,7 @@ Wie flexibel Arrays sind, wird ersichtlich daran, dass es möglich ist, Arrays z
 
 ```javascript
 var primzahlen = [1, 2, 3, 5, 7, 11, 13, 17 ];
-var fibonacci = [1, 2, 3, 6, 12, 24]
+var fibonacci = [1, 1, 2, 3, 5, 8, 13, 21, 32]
 
 var mathlist = [primzahlen, fibonacci];
 ```
@@ -59,7 +59,7 @@ Wie können wir dann auf das dritte Elemente der Primzahlen zugreifen?
 ```javascript
     mathlist[0, 2];
 ```
-Wir wissen, dass die Primzahlen das erste Elemente in der Liste ist, die Zahl 3 wiederum ist das dritte Element der Primzahlenliste. Und weil wir beim Zugrff auf ein Listenelement bei der Null beginnen, müssen wir in Gedanken also jeweils eine Eins abziehen, also **mathlist[0,2]**
+Wir wissen, dass die Primzahlen das erste Elemente in der Liste ist, die Zahl 3 wiederum ist das dritte Element der Primzahlenliste. Und weil wir beim Zugrff auf ein Listenelement bei der Null beginnen, müssen wir in Gedanken also jeweils eine Eins abziehen, also **mathlist[0][2]**
 
 
 # Das Array-Objekt
@@ -70,7 +70,7 @@ Was ist die Antwor, wenn wir das Array daraufhin abfragen, zu welchem Datentyp e
     var x = typeof (mathlist );
     console.log( x );
 ```
-Man könnte erwarten, dass der Compiler mathlist als **Array** identifiziert, aber es sagt uns, dass wir es mit einem Objekt zu tun haben. 
+Man könnte erwarten, dass der Compiler **mathlist** als **Array** identifiziert, aber es sagt uns, dass wir es mit einem Objekt zu tun haben. 
 
 Die Erklärung ist simpel. Dem Array-Ojekt sind neben seiner Aufbewahrungsaufgabe eine Reihe von Funktionen mitgegeben, die für den Listen weentlich sind: Man will sie sortieren können, man will eine Elemente löschen, andere hinzufügen können etc.
 
@@ -92,7 +92,7 @@ Mit dem Befel **slice** wir können aus dem Array auch eine Unternmenge heraussc
 
 ```javascript
     var x = [0,1,2,3,4,5,6,7,8,9]
-    var y = x.slice(2,4); // wir wollen die Einträge vom 2. bis zum 4. Element 
+    var y = x.slice(2,4); // wir wollen die Einträge vom 2. bis zum 4. Element herausholen
     // y beträgt nun [2,3]
 
     var z = x.slice(1,9);
@@ -117,7 +117,7 @@ Aufgabe: Erzeugen Sie eine Reihe von 100 Zufallszahlen
 
 Wir wollen nun - was eine gute Möglichkeit ist, zu erkennen, ob ein Text auf Deutsch, Spanisch oder Französisch verfasst ist - ein Programm schreiben, das die Buchstabenhäufigkeit in einer Sprache erfasst. Aus Servicegründen habe ich Ihnen schon einmal einige Texte vorbearbeitet - ich habe die Interpunktion und die Leerzeichen entfernt und alle großgeschriebenen Lettern zu kleingeschriebenen umfortatiert. Herausgekommen ist ein endelos langer String, der etwa so aussieht:
 
-Was also ist zu tun? Wir müssen jeden einzelnen Buchstaben des Textes durchgehen, ihn, falls er noch nicht in der Liste existiert, ablegen und dann entsprechend hochzählen. Also: Haben wir das **ß** noch nicht erfasst, fügen wir es mit einem **push** Befehl dem Array hinzu und zählen dann den Index hinzu. Schlussendlich müssen, wenn wir ale Buchstabe erfasst, haben, die Anzahl der Vorkommnisse zur Gesamtzeichenzahl in Proportion setzen - das ist dann die durchschnittliche Worthäufigkeit. Unser Minimalobjekt sähe so aus: 
+Was also ist zu tun? Wir müssen jeden einzelnen Buchstaben des Textes durchgehen, ihn, falls er noch nicht in der Liste existiert, ablegen und dann entsprechend hochzählen. Also: Haben wir das **ß** noch nicht erfasst, fügen wir es mit einem **push** Befehl dem Array hinzu und zählen dann den Index hinzu. Schlussendlich müssen, wenn wir ale Buchstabe erfasst, haben, die Anzahl der Vorkommnisse zur Gesamtzeichenzahl in Proportion setzen - das ist dann die durchschnittliche Worthäufigkeit. Unser Minimalobjekt, das wir in einer Buchstabenliste speichern wollen, sähe so aus: 
 
 ```javascript
     var letter = {
@@ -308,4 +308,151 @@ Auf diese Weise können wir beliebie Texte mit ein oder zwei Zeilen überprfen u
     var result = compare ( test, model);
 ``` 
 
-Was uns dazu noch fehlt, ist die compare-Funktion
+Was uns dazu noch fehlt, ist die compare-Funktion. 
+Wie man sich vorstellen kann, wird der neu zu untersuchende Text nicht bis auf die letzte Nachkommastelle mit dem Modell zusammengehen. Deshalb fügen wir eine Toleranparameter hinzu.
+
+```javascript
+function compare ( actual, model, tolerance) 
+
+}
+``` 
+
+Zuerst werden wir unsere zu prüfende Liste durchgehen und jeden einzelnen Buchstaben abrufen, etwa so:
+
+```javascript
+function compare ( actual, model, tolerance) 
+    for (var i = 0; i < actual.legth; i++) {
+        var item = actual[ i ];
+        // und jetzt sollte der Vergleich folgen
+    }
+
+}
+``` 
+
+Um vergleichen zu können, müssen wir allerdings eine Suchfunktion haben, die die Frequenzwerte des entsprechenden Buchstabens aus unserem Modell herausholt. Dazu schreiben wir eine kleine Hilfsfunktions namens **scan_model**. Sie durchsucht unser Modell und gibt den entsprechenden Wert aus der Liste zurück:
+
+```javascript
+function scan_model ( char, model ) 
+    for (var i = 0; i < model.legth; >) {
+        if ( model[ i ].char === char ) return model[ i ];
+
+        // und jetzt sollte der Vergleich folgen
+    }
+}
+``` 
+
+Mit dieser Funktion können wir in unserer **compare** Funktion weiterarbeiten:
+
+```javascript
+function compare ( actual, model, tolerance) 
+    for (var i = 0; i < actual.legth; i++) {
+        var item = actual[ i ];
+        var model_item = scan_model( item.char );
+        // Jetzt der Vergleich
+
+    }
+
+}
+``` 
+
+
+Beim Vergleich wollen wir, dass die Frequenz unseres Items nicht größer ist als die Frequenz des Modell-Items zuzüglich der Tolerenz und nicht kleiner als die Frequenz des Modell-Items abzüglich der Toleranz. Wir können die beiden Grenzwerte folgendermaßen definieren:
+
+```javascript
+var upper_range = model_item.frequency + tolerance;
+var lower_range = model_item.frequency - tolerance;
+}
+``` 
+
+Jetzt muss nur noch eine **if** Abfrage folgen. Ist der Wert kleiner als die **lower_range**  
+oder ist er größer als die **upper_rtange**, muss das Modell als solches falsch seon. Um diese Falsifizierungs-Bedingung festzuhalten, ist eine Boolesche Variable am Anfang der Funktion vonnöten. Wir nennen sie **valid** und setzen sie probehalber auf **true**
+
+
+```javascript
+function compare ( actual, model, tolerance) 
+    var valid = true; 
+
+    for (var i = 0; i < actual.legth; i++) {
+        var item = actual[ i ];
+        var model_item = scan_model( item.char );
+        // Jetzt der Vergleich
+        if ( item.frequency < lower_range || item.frequency > upper.range) valid = false;
+
+    }
+
+return valid;
+}
+
+``` 
+
+
+
+
+Insgesamt ergibt sich folgender Code:
+
+```javascript
+function letter_frequency( text ) {
+    
+        // Zuerst wird die Liste definiert
+        var list = [];
+    
+        function count_chars ( char ) {
+            var found = false; // 
+            for (var n = 0; n < list.length; n++)
+               var obj = list[i];
+               if ( obj.char === char) {
+                    obj.index ++;
+                    found = true;
+                    }
+               }       
+    
+            if ( found === false ) {
+                var o = { 
+                    char: char,
+                    count: 1,
+                    frequency: null
+                }
+                list. push( o );
+        }
+    
+
+        // und jetzt vollziehen wir den Textdurchlauf
+    
+        for ( var i = 0; i < text.lengt; i++) {
+            var char = text[i];
+            count_chars( char );
+        } 
+    
+        // jetzt gehen wir unsere Liste durch und ermitteln die Frequenz
+        // eines jeden einzenen Buchstabens
+    
+        for ( var i = 0; i < list.lengt; i++) {
+            var obj = list[i];
+            obj.frequency = (obj.count < text.length).toFixed(2);
+        } 
+    
+    return list;
+    }
+    
+    
+    function scan_model ( char, model ) {
+        for (var i = 0; i < model.legth; i++ ) {
+            if ( model[ i ].char === char ) return model[ i ];
+        }
+    }
+
+
+    function compare ( actual, model, tolerance) {
+        var valid = true; 
+    
+        for (var i = 0; i < actual.legth; i++) {
+            var item = actual[ i ];
+            var model_item = scan_model( item.char );
+            // Jetzt der Vergleich
+            if ( item.frequency < lower_range || item.frequency > upper.range) valid = false;
+    
+        }
+    
+    return valid;
+    }
+``` 
