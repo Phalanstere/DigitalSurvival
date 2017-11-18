@@ -3,7 +3,7 @@
 Listen sind ein extrem mächtiges Werkzeug - letztlich, wenn Sie so wollen, die Urform jeder Datenbank.
 
 In einer Liste (einem **Array**, wie der Terminus heißt) arrangiert man lauter gleichartige Blöcke in ener Reihe.
-Eine Liste ist einfach definiert. In Javascrpt hat - wie Sie gesehen haben - die Struktur einer Kiste folgende, auch visuell höchst einprägasame Form. 
+Eine Liste ist einfach definiert. In Javascrpt hat - wie Sie gesehen haben - eine Liste folgende, auch visuell höchst einprägasame Kisten-Form. 
 
 ```javascript
 var a = [];
@@ -22,7 +22,7 @@ var a = ['Konto kündigen', 'Rechnung einsehen', 'Rechnung reklamieren', 'Sonsti
 ```
  Das **Komma** dient dabei als Operator, der die verschiedenen Einträge voneinander unterscheidt.
 
-Die Javascript **Arrays** besitzen insofern eine große Abstraktionshöhe, als sie alle erdenklichen Objekte aufnehmen können: Zahlen, String, Objekte. Zudem kann man  (auch wenn das keine empfehlenswerte Parxis ist) verschiedene Typen miteinander vermengen, also:
+Die Javascript **Arrays** besitzen insofern eine große Abstraktionshöhe, als sie alle erdenklichen Objekte aufnehmen können: Zahlen, Strings, Objekte etc. Zudem kann man  (auch wenn das keine empfehlenswerte Prxis ist) verschiedene Typen miteinander vermengen, also:
 
 ```javascript
 var a = ['Konto kündigen', 1, 3.124, {} ]
@@ -31,8 +31,14 @@ var a = ['Konto kündigen', 1, 3.124, {} ]
 Wie können wir nun auf die Kreiszahl PI zugrefen, die in diesem Array an dritter Stelle steht? Wir schreiben einfach:
 
 ```javascript
+a[2] 
+```
+Und um es anzeigen zu lassen:
+
+```javascript
 console.log( a[2] );
 ```
+
 Warum steht hier eine 2 - und keine 3? Die Erklärung ist, dass man be Arrays grundsätzlich bei der Nullstelle zu zählen beginnt:
 
 ```javascript
