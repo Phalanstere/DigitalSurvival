@@ -2,8 +2,8 @@
 
 Listen sind ein extrem mächtiges Werkzeug - letztlich, wenn Sie so wollen, die Urform jeder Datenbank.
 
-Nan arrangiert lauter gleichartige Blöcke in ener Reihe.
-Eine Liste ist einfach definiert. In Javascrpt hat - wie Sie gesehen haben - die Struktur einer Kiste. 
+In einer Liste (einem **Array**, wie der Terminus heißt) arrangiert man lauter gleichartige Blöcke in ener Reihe.
+Eine Liste ist einfach definiert. In Javascrpt hat - wie Sie gesehen haben - die Struktur einer Kiste folgende, auch visuell höchst einprägasame Form. 
 
 ```javascript
 var a = [];
@@ -15,7 +15,7 @@ Es gibt, neben dieser Notation, verschiedene Weisen, eine Liste (ein **Array**) 
 var a = new Array();
 ```
 In der Regel ist es sinnvoll, ein Objekt vorab mit Werten zu bestücken.
-Denken Sie an die verschiedenen Optionen, die en Kunde bei einem Callcenter hat:
+Denken Sie an die verschiedenen Optionen, die ein Kunde bei einem Callcenter hat:
 
 ```javascript
 var a = ['Konto kündigen', 'Rechnung einsehen', 'Rechnung reklamieren', 'Sonstiges']
