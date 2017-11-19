@@ -138,7 +138,7 @@ function Functions( div ) {
         window.addEventListener("keydown", self.checkKeys );
     }
 
-    this.pct = 14;
+    this.pct = 0;
 
     this.forward = function() {
         self.pct ++;
