@@ -138,7 +138,7 @@ function Functions( div ) {
         window.addEventListener("keydown", self.checkKeys );
     }
 
-    this.pct = 14;
+    this.pct = 0;
 
     this.forward = function() {
         self.pct ++;
@@ -209,8 +209,7 @@ function Functions( div ) {
                             fontSize: "30px",
                             fontSize: "18px",
                             color: "blue",
-                            textAlign: "left",
-                            text: "return"
+                            textAlign: "left"
                            });  
 
 
