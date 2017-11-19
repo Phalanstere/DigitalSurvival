@@ -209,8 +209,7 @@ function Functions( div ) {
                             fontSize: "30px",
                             fontSize: "18px",
                             color: "blue",
-                            textAlign: "left",
-                            text: "return"
+                            textAlign: "left"
                            });  
 
 
