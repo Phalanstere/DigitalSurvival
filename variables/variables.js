@@ -501,6 +501,7 @@ function Variables (div) {
         switch( self.pct ) {
             case 1:
                 self.single_cell();
+                self.clear();
             break;
 
             case 2:
@@ -535,9 +536,22 @@ function Variables (div) {
     }
 
 
+    this.clear = function() {
+        var el = document.getElementById("big");
+        el.innerHTML = "";
+    }
+
+    this.intro = function() {
+        var s = "Wunschmaschine";
+        var el = document.getElementById("big");
+        el.innerHTML = s;
+    }
+
+
 
     this.init = function() {
         self.navigation();
+        self.intro();
         
     }
 
