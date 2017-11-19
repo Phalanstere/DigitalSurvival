@@ -27,7 +27,7 @@ function sortObj(list, key) {
 function letter_frequency( text ) {
         // Zuerst wird die Liste definiert
         console.log( text.length);
-        
+
 
         var list = [];
 
@@ -88,10 +88,7 @@ function letter_frequency( text ) {
 
     function compare ( actual, model, tolerance) {
        var valid = true; 
-
         for (var i = 0; i < actual.length; i++) {
-
-
             var item = actual[ i ];
             var model_item = scan_model( item.char, model );
 
@@ -109,9 +106,7 @@ function letter_frequency( text ) {
                     }
             }
 
-
         }
-
     return valid;
     }
 
