@@ -1,7 +1,7 @@
 var speak = function( text ) {
-    var ssu = new SpeechSynthesisUtterance( text );
-    window.speechSynthesis.speak( ssu );
+        var ssu = new SpeechSynthesisUtterance( text );
+        window.speechSynthesis.speak( ssu );
 }
 
 
-module.exports = speak;
+exports.speak = speak;
