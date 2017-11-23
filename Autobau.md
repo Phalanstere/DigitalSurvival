@@ -1,17 +1,16 @@
 # Konstruktion des Wagens
 
-
 ### 1. Konstruktion
 Der erste Akt: Wir erzeugen ein Funktionsobjekt, das zunächst einmal nur die maximale Geschwindigkeit des Wagens erhält.
 
 
 ```javascript
-var x = function Car ( max ) {
+var x = function Car ( ) {
 
 }
 ```
 
-Damit der Wagen die Eigenschaft annimmt, ist es sinnvoll, ihm ein entsprechendes Attribut zu verpasen, also:
+Damit der Wagen kein leeres Chassis bleibt, sondern auf Touren kommen kann, ist es sinnvoll, ihm ein entsprechendes Attribut zu verpasen, also:
 
 ```javascript
 var x = function Car ( max ) {
@@ -41,7 +40,7 @@ var x = function Car ( max ) {
 }
 ```
 
-Strenggenommen brauchen wir zwei Listener: einmal für den Augenblick, da der Fahrer das Gas (oder die Bremse) drückt, ein anderen, um festzuhalten, ob er sie loslässt. Das entspricht der Tastenlogik: **keydown** oder **keyup**
+Strenggenommen brauchen wir zwei Listener: einmal für den Augenblick, da der Fahrer das Gas (oder die Bremse) drückt, einen zweiten, um festzuhalten, ob er sie loslässt. Das entspricht der Tastenlogik: **keydown** oder **keyup**
 
 
 ```javascript
@@ -54,6 +53,8 @@ var x = function Car ( max ) {
 ```
 
 Wenn wir den Code jetzt ausführen, gibt es einen Fehler. Denn der Listener erwartet eine Funktion, nämlich **this.press**, resp. **this.release**
+
+Erinnern Sie sich? Das ist ein **callback**, wie bei **setTimeout** oder **setInterval** 
 
 Wir sehen hier das Schlüselwort **this**. Das heißt: die Funktion befindet sich im Inneren unseres Objekts, also im Auto.
 Dort müssen wir sie platzieren.
@@ -149,7 +150,7 @@ Das könnte so aussehen:
 ```
 
 Im Falle der Releasefunktion müssten wir diese Zusände aufheben und den Trägheitszustand setzen.
-Der entspricht dem Inertialzustand des Anfangs, also wenn das Auto still da. Nennen wir ihn also **resting**
+Der entspricht dem Inertialzustand des Anfangs, wenn das Auto still da. Nennen wir ihn also **resting**. Und weil sich dieser Zustand auf das Objekt bezieht: **this.state == resting**
 
 
 ```javascript
@@ -157,7 +158,7 @@ Der entspricht dem Inertialzustand des Anfangs, also wenn das Auto still da. Nen
 }
 ```
 
-Wir tun dies sinnvollerweise außerhalb der **interface**-Fuktion. Dann wird diese Zuweisung nämlich gleich zu Anfang ausgeführt.
+Wir tun dies sinnvollerweise außerhalb der Funktionsblöcke, die ja erst dann virulent werden, wenn die Funktion aufgreufen wird. Dann wird diese Zuweisung gleich zu Anfang ausgeführt.
 Der Code sieht nun folgendermaßen aus.
 
 
@@ -171,19 +172,17 @@ var Car = function ( max ) {
 
     this.press = function(event) {
         switch(event.code) {
-            
             case 'ArrowUp':
                 self.state = "accelerate";
             break;
 
             case 'ArrowDown':
                 self.state = "decelerate";
-            break;
+            break
         }
 
     this.release = function(event) {
         switch(event.code) {
-            
             case 'ArrowUp':
                 self.state = "resting";
             break;
@@ -204,24 +203,25 @@ var Car = function ( max ) {
 
 Warum steht in den Funktionen **self.state**? Müsste es nicht **this.state** heißen?
 
-Ja - das Dilemma ist nur, dass unser Auto mit der Außenwelt kommuniziert (z.B. in Gestalt der vorgefertigten **windows** -Funktionen).
+Ja - das Dilemma ist nur, dass unser Auto mit der Außenwelt kommuniziert (z.B. in Gestalt der vorgefertigten **windows** -Funktionen - oder wenn wir beispielsweise auf den Gwedanken verfielen, unsere Wipipedia Funktionalität in unser Aute pflanzen wo wollen).
 Damit geht die Selbstbezüglichkeit verloren.
 
 Die Lösung besteht darin, dass wir am Anfang der Funktion über eine Hilfsvariable **self** den Bezug festhalten.
-Da diese nie geändert wird, deutet **self** nun immer auf das Objekt.
 
-In den Funktionsblöcken werden wir also statt **this** nun **self** schreiben.
+Da diese nie geändert wird, deutet **self** stets auf das Objekt, erhält also die Selbstbezüglichkeit.
+
+In den Funktionsblöcken werden wir statt **this** nun **self** schreiben.
 
 
 Wie man sieht, ist neben dem Ausgangzustand **resting**  auch noch eine **velocity** hinzugeügt worden.
-Das hat bilsang gefehlt. Zwar hatten wir eine **this.max_velocity**, aber das bezog sich auf die Maximalgeschwindigkeit,nicht auf die tatsächliche Geschwindigkeit des Autos.
+Das hat bilsang gefehlt. Zwar hatten eine **this.max_velocity**, aber das bezog sich auf die Maximalgeschwindigkeit, nicht auf die tatsächliche Geschwindigkeit des Autos.
 
 
 <hr>
 
 ### 4.  Die Loop - beim laufenden Motor
 
-Ist der Wagen, eingeschaltet, läuft der Motor. Etwas ähnliches passiert auch in unserem Funktionsobjekt, das in eine Art autombiler Dauerschleife eintritt.
+Ist der Wagen eingeschaltet, läuft der Motor. Etwas ähnliches passiert auch in unserem Funktionsobjekt, das in eine Art autombiler Dauerschleife eintritt.
 
 Dazu nutzen wir die **setInterval** Funktion
 
@@ -298,7 +298,6 @@ var Car = function ( max ) {
 
     this.release = function(event) {
         switch(event.code) {
-            
             case 'ArrowUp':
                 self.state = "resting";
             break;
@@ -314,12 +313,13 @@ var Car = function ( max ) {
 }
 ```
 
-
 # 5. Funktionalität
 
 Keine Angst - der Code wird sich nur noch unwesentlich aufblähen. Im Grunde geht es jetzt um simple Recheroperationen, nämlich
-dass wir die Geschwindigkeit des Autos erhöhen, wenn wir aufs Gas drücken, sie vermindern, wenn wir bremsen, und dann, wenn weder Gas noch Bremse gedrückt, das Trägheitsmoment berechnen. 
 
++   dass wir die Geschwindigkeit des Autos erhöhen, wenn wir aufs Gas drücken 
++   sie vermindern, wenn wir bremsen, 
++   dann, wenn weder Gas noch Bremse gedrückt sind, das Trägheitsmoment berechnen. 
 
 
 ## Beschleunigen
@@ -328,7 +328,7 @@ dass wir die Geschwindigkeit des Autos erhöhen, wenn wir aufs Gas drücken, sie
     if (self.velocity < self.max_velocity) self.velocity += 0.3;               
 ```
 Das heißt: sofern die Geschwindigkeit unterhalb der Maximalgeschwindigkeit liegt, wird der Wert um 0.3 erhöht.
-Das ist eine lineare Beschleunigung - und entspricht nicht gerade der Realität, bei der den Beschleunigungsfaktor dynamisiert.
+Das ist eine lineare Beschleunigung - und entspricht nicht gerade der Realität, bei der der Beschleunigungsfaktor eine dynamische Größe ist.
 Aber es ist nur eine einzige Zeile - und das ist ausschlaggebend.
 
 
@@ -342,7 +342,7 @@ Beim Bremsen haben wir es mit dem inversen Zustand zu tun.
 
 ## Trägheit
 
-Wird weder gebremst noch Gas geben, verlangsamt sich die Fahrt (aufgrund der Reibung und des Trägheismomentes) gleichwohl.
+Wird weder gebremst noch Gas gegeben, verlangsamt sich die Fahrt (aufgrund der Reibung und des Trägheismomentes).
 
 ```javascript
     if (self.velocity > 0) self.velocity -= 0.05;
@@ -379,7 +379,6 @@ var Car = function ( max ) {
 
     this.press = function(event) {
         switch(event.code) {
-            
             case 'ArrowUp':
                 self.state = "accelerate";
             break;
@@ -391,7 +390,6 @@ var Car = function ( max ) {
 
     this.release = function(event) {
         switch(event.code) {
-            
             case 'ArrowUp':
                 self.state = "resting";
             break;
