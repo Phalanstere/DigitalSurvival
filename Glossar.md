@@ -26,8 +26,44 @@ Die Antwort der Open Source-Bewegung auf die Herrschaft eines proprietären Syst
 
 Mit den Open Source Systemen wurde die Abstimmung des Codes immer wichtiger. Linus Torvalds entwickelte im Jahr 2005 ein Versionierungsprogramm namens **git**, mit dem es möglich war, die ASrbeit von große Programmiererkohorten zu koordinieren - und im Zweifelsfall jede einzelne Programmierzeile nachvollziehbar zu machen.
 
-Im Jahr 2008 kam - von Tom Preston 
+Im Jahr 2008 kam - von Tom Preston Warner et. al. entwickelt, die **github** Plattform hinzu
 
+[Github](https://www.github.com)
+
+Git ist eine ideale Programmiererumgebung, als Programmierer hier ihren Open-Source Code umsonst hosten können. Für einen Aufpreis können Firmen eine geschlossene Arbeitsumgebung einrichten.
+
+Die Server der Firma suind hochverlässlich - die Umgebung intuitiv und leicht zu erfassen. Das Versionierungstool **git** wiederum führt dazu, dass alle Stadien einer Software festgehalten werden, dass darüberhinaus **rollbacks** und eine Verzweigung des Codes in unterschiedliche Entwicklungsverlöufe (**ranches**) möglich sind.
+
+# Problematik von Backend und Frontend
+
+Wenn man vom **Backend** spricht, ist grundsätzlich die Datenbankprogrammierung gemeint. **Frontend** wiederum meint die Oberfläche, die dem Nutzer zugänglich ist.
+
+In der Regel sind diese beiden Welten auch physisch voneinander getrennt: Das Backend läuft auf dem **Server** (wo die Datenbank in der Regel liegt), das **Frontend** wird vom Kunden - dem **Client** auf seinen Browser heruntergeladen und dort - also **client-seitig** - ausgeführt.
+
+Tatsächlich hat man es mit zwei unterschiedlichen Kulturen zu tun: einer abstrakten Datenebenee einerseits, einer eher an theatralischen und ästhetischen Effekten interessierte Darstellungsebene andererseits.
+
+In diesem beiden herrschten unterschiedliche Denkfiguren. Das Backend sprach **MySQL** (Java, Perl, PHP), während sich das Frontend mit **JavaScript** und **CSS** beschäftigte.
+
+Dabei ist **CSS** (die sog. Cascaded Style Sheets) eine Art Formatierungssrache, die über das Erscheinungsbild von Website-Elementen verfügt: etwa die Größe und Farbe eines Fonts, den Farvhintergrund, die Art und Weise, wie Bilder angeordnet sind etc.
+
+Da **CSS** allerdings nicht (oder nur in höchst begrenzter Form) dynamisch ist, muss dies über eine Programmiersprache bewerkstelligt werden: Javascript. **Javasccript** hat - trotz dem Names - nichts mit Java zu tun. Historisch weist es eher eine Verwandtschaft zur AI-Sprache LISP auf, die in den 60er Jahren entwickelt wurde. (Aber zur Bedeutung von Javascript Näheres im folgenden Abschnitt)
+
+
+Um die Trennung von Backend und Forntend aufzuheben, gab es intensive Bemühungen. Sie gingenvor allem dahin, den Kommunikationskanal zu den **SQL**-Datenbanken zu erleichtern.
+
+Ein Versuch in dieser Hinscht war die **Ruby in Rails** - Enzwicklungsumgebung, die von David Heinemeier Hansson im Jahr 2004 vorgestellt wurde. Hier lag der Fokus darauf, die klobigen **SQL**-Datenbanken leichter zugäglich zu machen und in dynamische Programmierumgebungen einzubetten. Zu diesem Zweck war das **Rails** -Interface konzipiert, das von der Script-Sprache **ruby** gesteuert wurde. Auf diese Weise konnten die Backend-Programmierer mit Daten aus der Datenbank umgehen, als hätten sie gewöhnliche Variablen vor sich.
+
+Zweifellos bewirkte das Framework einen riesigen Entwicklungssprung
+
+
+
+
+# JavaScript als lingua franca
+
+
+
+
++ CSS - Cascaded Style Sheets, eine Sprache, mit der sich das Aussehen von Webseiten programmieren lässt
 
 
 
