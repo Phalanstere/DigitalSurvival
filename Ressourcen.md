@@ -6,7 +6,12 @@ Wenn Sie Blut geleckt haben und gerne weiterpraktizieren möchten, ist Ihnen fol
 
 ## Microsoft Visual Studio Code
 
+[Microsoft Visual Studio](https://code.visualstudio.com)
+
+
 Ein Gratis-Programmierungswerkzeug von **Microsoft**. Vor einigen Jahren noch hat Microsoft seine Programmierwerkzeuge teuer verkauft, jetzt hat man den Zeitgeist aufgesogen und stellt dieses hoch elaborierte Werkzeug kostenlos bereit. Ebenfalls kostenlose Alternativen sind **Ace** (das Sie in meiner Programmierumgebung benutzen) und **Aptana**.
+
+
 
 Wenn Sie tiefer einsteigen wollen, ist Ihnen ein Handbuch zum objektorientierten Programmieren sowie **node.js** anempfohlen. Auch **node.js** gibt es umsomst.
 
