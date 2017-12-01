@@ -92,12 +92,14 @@ Hier sehen wir einen Paragraphen, der den folgenden Text annzeigt: **Minimal Art
 
 HTML - Tags sind, hat man sie einmal begriffen, ziemlch trivial. 
 
-+ <h1> ist eine Überschrift der ersten Kategorie
++ &lt;h1> ist eine Überschrift der ersten Kategorie
 + <h2> ist eine Überschrift der zweiten Kategorie
 + <h3>
 + <h4>
 + <div> ist ein Divider, dem Paragraphen verwandt - nur dass er auch für Bilder oder andere Steuerelemente reserviert ist
 <span> ist ein umspannendes Element, das zur Spezififierung von Minimal-Elementen gedacht ist
+
+
 
 
 ```html
