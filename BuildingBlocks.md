@@ -76,3 +76,35 @@ Wie das Beispiel zeigt, enthält der **html** - Block neben dem **body**, der di
 Im **head** lassen sich Informationen verstecken, die für Suchmaschinen wichtig sind, der **meta** tag verweist auf den verwendeten Zeichensatz. Auf diese Weise können chinesische, japanische oder arabische Seiten einen anderen Zeichensatz markieren. 
 
 Der oben verwendete **utf-8** Code unkludiert bereits alle Zeichensysteme.
+
+Schauen wir uns nun den Teil an, von dem wir wissen, dass er auf der Webseite erscheint:
+
+
+```html
+    ...
+
+    <body>
+        <p>Minimal Art - Content</p>
+    </body>
+```
+
+Hier sehen wir einen Paragraphen, der den folgenden Text annzeigt: **Minimal Art - Content**
+
+HTML - Tags sind, hat man sie einmal begriffen, ziemlch trivial. 
+
++ <h1> ist eine Überschrift der ersten Kategorie
++ <h2> ist eine Überschrift der zweiten Kategorie
++ <h3>
++ <h4>
++ <div> ist ein Divider, dem Paragraphen verwandt - nur dass er auch für Bilder oder andere Steuerelemente reserviert ist
+<span> ist ein umspannendes Element, das zur Spezififierung von Minimal-Elementen gedacht ist
+
+
+```html
+    <body>
+        <h1>Überschrift</h1>
+        <p>Minimal Art - Content</p>
+    </body>
+```
+
+
