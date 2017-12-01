@@ -127,9 +127,9 @@ Wie aber greift nun eine solche CSS-Definition (mit der wir uns gleich beschäft
 
 Dabei stellt die **id** ist dabei (auch wenn Nutzer das Prinzip, ohne Folgen zu fürchten, ignoprieren kann) eine einmalige Referenz auf ein HTML-Element dar.
 
-Die **class** wiederum kann mehrere Elemente betreffen. Eine **id** wird in css über das Schlüsselzeichen **#** angeesprochen, eine Klasse über das Schlüsselzeichen **.**
+Die **class** wiederum kann mehrere Elemente betreffen. Eine **id** wird in css über das Schlüsselzeichen **#** angesprochen, eine Klasse über das Schlüsselzeichen **.**
 
-Nehmen wir an, dass unsere HTML-Tags jetzt mit einem id und eine Klasse versehen sind, etwa so:
+Nehmen wir an, dass unsere HTML-Tags jetzt mit einer id und einer Klasse versehen sind, etwa so:
 
 
 
@@ -139,6 +139,26 @@ Nehmen wir an, dass unsere HTML-Tags jetzt mit einem id und eine Klasse versehen
         <p class = "FirstClass">Minimal Art - Content</p>
     </body>
 ```
+
+```css
+#FirstTitle{
+    font-family: monospace;
+}
+
+.FirstClass{
+    font-variant: italic;
+    color: red;
+}
+```
+
+Sinnigerweise schreiben wir diese beiden Definitionen ine eine **css** Datei, die wir beispielsweise **style.css** nennen können.
+
+Damit unsere html-Datei darauf zugreifen kann, muss diese Datei zunächst deklariert werden. Zu diesem Zweck fügen wir in der **head** - Sektion folgende Zeile hinzu:
+
+```html
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+```
+
 
 
 
