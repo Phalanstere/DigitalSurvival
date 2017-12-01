@@ -15,12 +15,18 @@ Schauen wir uns ein **minimales HTML-Dokument** einmal an:
 
 
 ```html
-var http = require('http');
+<!-- http://www.brucelawson.co.uk/2010/a-minimal-html5-document/ -->
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <title>Minimal Art - Titel</title>
+    </head>
+    <body>
+    <p>Minimal Art - Content</p>
+    </body>
+</html>
 
 ```
+
