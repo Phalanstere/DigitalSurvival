@@ -94,8 +94,8 @@ HTML - Tags sind, hat man sie einmal begriffen, ziemlch trivial.
 
 + &lt;h1> ist eine Überschrift der ersten Kategorie
 + &lt;h2> ist eine Überschrift der zweiten Kategorie
-+ &lt;h3>
-+ &lt;h4>
++ &lt;h3> ... dritte Katehgoe
++ &lt;h4> ... vierte Kategorie
 + &lt;div> ist ein Divider, dem Paragraphen verwandt - nur dass er auch für Bilder oder andere Steuerelemente reserviert ist
 + &lt;span> ist ein umspannendes Element, das zur Spezififierung von Minimal-Elementen gedacht ist
 
@@ -108,5 +108,38 @@ HTML - Tags sind, hat man sie einmal begriffen, ziemlch trivial.
         <p>Minimal Art - Content</p>
     </body>
 ```
+
+Schauen wir uns diese Seite an, sehen wir, dass der Parahraph und die Überschrift unterschiedlich formatiert wurden.
+
+## CSS
+
+UM jedoch die volle Kontrolle über das Aussehen von Websites zu erlangen, wurde eeine weitere Sprachspezifikation erstellt, die sogenannten **Cascadwed Style Sheets**, kurz: **CSS**.
+
+CSS wird relativ bald nach Einführung von HTML, im Jahr 1994, spezifiert.
+Die Idee ist einfach: Man wollte das Aussehen von HTML Tags unabhängig von ihrem Inhalt beeinflussen können.
+
+Wie aber greift nun eine solche CSS-Definition (mit der wir uns gleich beschäftigen werden) auf ein HTML-Element zu. Hier gib es zwei Schlüsselwörter, die man im HTML-Tag definieren kann, 
+
++ id 
++ class
+
+### id
+
+Dabei stellt die **id** ist dabei (auch wenn Nutzer das Prinzip, ohne Folgen zu fürchten, ignoprieren kann) eine einmalige Referenz auf ein HTML-Element dar.
+
+Die **class** wiederum kann mehrere Elemente betreffen. Eine **id** wird in css über das Schlüsselzeichen **#** angeesprochen, eine Klasse über das Schlüsselzeichen **.**
+
+Nehmen wir an, dass unsere HTML-Tags jetzt mit einem id und eine Klasse versehen sind, etwa so:
+
+
+
+```html
+    <body>
+        <h1 id = "FirstTitle">Überschrift</h1>
+        <p class = "FirstClass">Minimal Art - Content</p>
+    </body>
+```
+
+
 
 
