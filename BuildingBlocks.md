@@ -215,7 +215,8 @@ Der Gesamt-Code sieht jetzt folgendermaßen aus:
         <title>Minimal Art - Titel</title>
     </head>
     <body>
-    <p>Minimal Art - Content</p>
+        <h1 id = "FirstTitle">Überschrift</h1>
+        <p class = "FirstClass">Minimal Art - Content</p>
     </body>
 </html>
 ```
@@ -226,3 +227,71 @@ Unsere Javascript-Datei macht noch gar nicht. Also füllen wir sie mit einem Bef
 ```javascript
     alert("Hello World");
 ```
+
+Nun - das ist schön, aber wir wollen imstande sein, z.B. den Inhalt unseres Titels und des Paragraphen dynamisch zu ändern.
+
+Hier ist kein kleines **caveat** angebracht, das wir uns genau anaschauen sollten. 
+
+Denn lesen wir uns ein bisschen zum **Document Object Model** ein, entdecken wir aschnell, dass wir auf eine Element der Webseite einfach zugreifen können, etwa so:
+
+```javascript
+    var el = document.getElementById("FirstTitle");
+```
+
+Schauen wir uns diese Zeile genau an. Hier wird zunächst eine Variable mit dem Namen **el** definiert, die uns den Zugriff auf ein HTML-Element mit der ID **"FirstTitle"** erlauben soll.
+
+Dieses, wie wir wissen, exsitiert - denn wir haben es selber geschrieben.
+Das Interface, das wir hier benutzen, trägt den Namen **document** - und in ihm sind alle Befehle enthalten, die wir für die dynamische Manipulation der Webseite brauchen.
+
+Um auf den Befehl **getElementById** zuzugreifen, müssen wir dem **document** - Interface nur einen Punkt anfügen. Damit wird gewissermaßen das Innenleben dieses Baukastens aufgeschlossen.
+
+Da unsere Variable **el** nun auf ein HTML-Element verweist, wollen wir seinen Wer verändern.
+Wichtig ist dabei zu wissen, dass **el** nun selbt eine Art HTML-Objket geworden ist, das über eine Reine von eingebaute Befehlen verfügt, z.B. **innerHTML**, ein Befehl, mit dem wir das, was zwischen den Tags steht, ändern können.
+
+
+```javascript
+    var el = document.getElementById("FirstTitle");
+    el.innerHTML = "Mein neuer Titel";
+```
+  
+Diese Code sollte also den Titel verändern.
+
+Wenn wir die Datei abspeichern und die **index.html** - Seite ernaut arufrufen, passiert - nichts.
+
+Warum? Weil wir einen Fehler gemacht haben?
+Nein. Der Grund ist ein anderer. Wir sehen, dass der Browser, bevor er die html-Elemente generiert, die Ressourcen einlädt, den Oswald-Font, das CSS-Programm, schließlich unsere Javascript-Datei **program.js**.
+
+Und natürlich wird er sie sopgleich ausführen. Da dies im Millisekundenbereich passiert, ist zu diesem Zeitpunkt die HTML Seite noch nicht generiert - das Element mit der ID "FirstTitle" also nicht vorhanden.
+
+Damit unser Befehl erst dann ausgeführt wird, wenn alle HTML-Elemente generiert sind, müssen wir auf einen sog. **Callback** zurückgreifen, ein Programm, das erst ausgeführt wird, denn der Body der Seite auf den Bildschirm gezaubert worden ist. 
+
+
+Dieser Befehl, den wir unserem HTML-Code hinzufügen,heißt **body.onload**. Dazu müssen wir unseren **body** - Tag folgendermaßen umbauen:
+
+```html
+ <body onload = "ChangeTitle()">
+```
+
+Das bedeutet: Ist die Seite gezeichnet, soll die Funktion **ChangeTitle** aufgreufen werden. 
+Diese allerdings müssen wir erst noch generieren, etwa so:
+
+```javascript
+    function ChangeTitle() {
+        var el = document.getElementById("FirstTitle");
+        el.innerHTML = "Mein neuer Titel";
+    }
+
+```
+
+Wir verkapseln unsere beiden Code-Zeilen sinnvollerweise darin, denn sie werden, wie es auch in der HTML-Seite der Fall war, zeilenweise nacheinander abgearbeitet.
+
+Also: wir holen das Element aus dem DOM, dann verändern wir seinen Titel, voilà.
+
+# Zusammenfassung
+
+Wir sehen das Zusammenspiel unterschiedlicher Elemente, die zugleich eine historische Seite haben. HTML gewährt die grundlegende Architektur, CSS ist für das statische Styling zuständig und Javasceript erlaubt das dynamische Erzeugen von Seiten.
+
+Nimmt man diese Logik, so versteht man, dass die Dynamisierung von Webseite die Bedeutung von **Javascript** immer weiter anwachsen lässt - ja, dass zunehmend Bemühungen sichtbar werden, die Webseite kopmplett aus einer Javascript-Umgebung heraus (also dynamisch) zu generieren. Dabei werden **html** und **css** Elemente sozusagen wagabstraiert, genauer: in eine Javascript-Logik überführt.
+
+Facebooks **React** Framework, das eine große Popularität gewonnen hat, folgt dieser Logik. Und wenn wir uns im weiteren auf Javascript fokussieren wollen, gehen wir mit diesem Trend einher.
+
