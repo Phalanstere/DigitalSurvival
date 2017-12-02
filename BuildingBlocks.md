@@ -140,6 +140,8 @@ Nehmen wir an, dass unsere HTML-Tags jetzt mit einer id und einer Klasse versehe
     </body>
 ```
 
+Dann könnten unsere beide Stil-Spezifationen folgendermaßen aussehen:
+
 ```css
 #FirstTitle{
     font-family: monospace;
@@ -159,7 +161,68 @@ Damit unsere html-Datei darauf zugreifen kann, muss diese Datei zunächst deklar
     <link rel="stylesheet" type="text/css" href="style.css"/>
 ```
 
+Wenn wir den Text ausführen, sehen wir, dass er unseren Style-Kommandos gehorcht.
+Nehmen wir an, dass uns die Text-Tye nicht gefällt. Wir könnten uns im Netz umschauen, beispielsweise auf [Google Fonts](https://fonts.google.com/), und eine neue Type hinzufügen. Dabei ist Google so nett, gleich den Code zu generieren, den wir benötigen:
 
 
+```html
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+```
+
+Wie man sieht, ähnelt diese Zeile der vorigen - wird über das Schlüsselwort **rel** angezeigt hat, dass man es mit einem **stylesheet** - Befehl zu tun hat. 
+
+### Distributed Computing
+
+Wir haben hier eine Besoderheit, die unsere kleine Webseite von klassischen, monolotischen Programmen unterscheidet. Denn mit dem Link auf die Google-Seite holt sich unser Programm Informationen von einer phsysikalisch getrennten Website - der Seite, auf der die Google-Fonts aufgebahrt liegen.
+
+Strenggenommen ist die Zahl der unterschiedlichen Netzknoten, aus denen sich unsere Webseite zusammensetzt, unbegrenzt. Allein die Tatsache aber, dass es sich um unterschiedliche Netzknoten handelt, sollte uns daran erinnern, dass wir es hier mit einem Paradigma des **Distrubuted Computing** zu tun haben, also einer Entität, die sich zur Laufzeit aus Informationen zusammensetzt, die im Netz verstreut sind.
 
 
+## Javascript und das Document Object Model (DOM)
+
+Zwar besitzt **CSS** durchaus einige Animantions-Möglichkeiten, dennoch bleibt unsere Webseite, wenn sie sich allein auf **HTML** und **CSS** verlässt, weitgehend statisch.
+
+An dieser Stelle kommt Javascript und das sogenannte **Document Object Model** (DOM) ins Spiel.  
+
+Denn hier wird einer Programmierungssprache ein Zugriff auf die Elemente der Website erlaubt, also alle ERlemente, die hier verzeichnet sind: von denn **meta** - Tags zum **head** bis zu den Display-Elementen.
+
+Erzeugen wir aber erst einmal eine Javasript-Datei und schauen, wie wir sie in unserem Code einbetten. 
+
+Wir erzeugen eine Date mit dem Befehl **Datei->Neue Datei** und speichern sie unter dem Namen
+**program.js** ab.
+
+Um sie in unsere Webseite einzubetten, fügen wir im Header der **index.html** Datei folgende Zeile hinzu:
+
+```html
+<script type="text/javascript" src="script.js"></script>
+```
+
+Der Gesamt-Code sieht jetzt folgendermaßen aus:
+
+
+```html
+<!-- Das ist eine Kommentarzeile -->
+
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="program.js"></script>
+
+
+        <title>Minimal Art - Titel</title>
+    </head>
+    <body>
+    <p>Minimal Art - Content</p>
+    </body>
+</html>
+```
+
+
+Unsere Javascript-Datei macht noch gar nicht. Also füllen wir sie mit einem Befehl, den wir immer wieder brauchen, einem sog. **alert**:
+
+```javascript
+    alert("Hello World");
+```
