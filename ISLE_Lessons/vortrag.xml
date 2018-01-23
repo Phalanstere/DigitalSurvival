@@ -1,0 +1,781 @@
+---
+title: "Lesson"
+author: John Doe
+date: Sep 13th, 2017
+type: presentation
+state:
+server: http://ludicmedia.de:17777
+---
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "0 0 4px black",
+               fontSize: "2.5vw",
+               marginBottom: "20px"
+            }} >
+        Martin Burckhardt
+        </Heading>
+                <Heading style = 
+            {{ color: "white",
+               textShadow: "0 0 4px black",
+               fontSize: "2.5vw"
+            }} >
+       Heisse Luft
+        </Heading>
+        
+
+</Slide>
+
+
+
+<Slide style = {{ background: "white"}}
+    transition={["fade"]}>
+    <h1>http://www.ludicmedia.de/DS/Deutsches_Theater/Vote/</h1>
+    
+    <img src = "http://ludicmedia.de/Resources/QR.jpg"  width = {"50%"}  border= {25} />
+</Slide>
+
+
+<Slide 
+    transition={["fade"]}>
+
+<IFrame address = "http://burckhardt.ludicmedia.de/#/twinkomplex_psychotest">
+    
+</IFrame>
+</Slide>
+
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+    <h1>Heisse Luft</h1>
+
+</Slide>
+
+
+<Slide 
+    bgImage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/American_DC-3_plane_crash_-_American_DC-3_Flugzeugabsturz_%2830900213105%29.jpg/1280px-American_DC-3_plane_crash_-_American_DC-3_Flugzeugabsturz_%2830900213105%29.jpg" 
+    transition={["fade"]}>
+    
+    <Well>
+        <h1>What goes up must come down</h1>
+    </Well>
+    
+
+
+</Slide>
+
+
+<Slide 
+    bgImage="https://wallpaperdownload.xyz/wp-content/uploads/2016/10/clouds-wallpaper9.jpg" 
+    transition={["fade"]}>
+<div style={{ marginTop: '-50px', height: 'auto' }}>
+<img src = "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2011/kurzweilfig.1.jpg"  width = {"720px"} />
+</div>
+</Slide>
+
+
+
+<Slide 
+    bgImage="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/American_DC-3_plane_crash_-_American_DC-3_Flugzeugabsturz_%2830900213105%29.jpg/1280px-American_DC-3_plane_crash_-_American_DC-3_Flugzeugabsturz_%2830900213105%29.jpg" 
+    transition={["fade"]}>
+            <Heading style = 
+            {{ color: "white",
+               textShadow: "0 0 4px black",
+               fontSize: "2.5vw",
+               marginBottom: "20px"
+            }} >
+        Don't press this button! 
+        </Heading>
+    
+    
+    <Button onClick={ () => {
+        global.session.log({
+        	id: "HAL3000",
+			type: 'CATASTROPHY',
+			value: 'Boom!!!'
+        });
+        global.session.addNotification({
+            title: 'Boom!!!',
+            position: 'tr',
+            level: 'error'
+        });
+    } } style={{ border: 'none', borderRadius: '50%' }}><Image src={ "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/HAL9000.svg/1200px-HAL9000.svg.png"} width={320} height={320} /></Button>
+
+</Slide>
+
+
+<Slide 
+    transition={["fade"]}>
+<IFrame address = "http://www.marketwatch.com/investing/index/shcomp?countrycode=cn"/>
+</Slide>
+
+
+
+<Slide 
+    transition={["fade"]}>
+
+<IFrame address = "https://www.bpcap.net/team">
+    
+</IFrame>
+</Slide>
+
+
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <img src = "http://ludicmedia.de/Resources/tboone.jpg"  width = {"100%"}  border= {25} />
+    
+<Appear>
+<BlockQuote>
+  <Quote style = {{ fontSize: "42px" }} >Wenn Du Elefanten jagst, lass Dich nicht durch die Kaninchen ablenken</Quote>
+  <Cite>T. Boone Pickens</Cite>
+</BlockQuote>
+</Appear>    
+    
+</Slide>
+
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/TobyLoftin.jpg" 
+    transition={["fade"]}>
+
+    <Appear>
+        <Heading style = 
+        {{ color: "white",
+           textShadow: "2px 2px black"
+        }} >
+        Wollen wir diesem Mann 2 Milliarden anvertrauen?
+        </Heading>
+    </Appear>
+
+</Slide>
+
+
+
+
+<Slide 
+    transition={["fade"]}>
+<IFrame address = "https://www.worldcoinindex.com/coin/bitcoin"/>
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Quartz_01.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Quartz_02.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Quartz_03.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Quartz_04.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Quartz_05.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Nakamoto.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://www.anonews.co/wp-content/uploads/2017/08/anonymous-message-about-world-di.jpg" 
+    transition={["fade"]}>
+    
+    <Appear>
+            <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            We do not forget
+        </Heading>
+    </Appear>
+    
+        <Appear>
+            <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            we do not forgive
+        </Heading>
+    </Appear>
+            <Appear>
+            <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            expect us!
+        </Heading>
+    </Appear>
+    
+    
+</Slide>
+
+
+<Slide 
+    bgImage="http://1.bp.blogspot.com/-WB5xpHnbJxU/UOmJ6pObouI/AAAAAAAAblQ/XX_QlB0fWWc/s1600/wall-street-bull.jpg" 
+transition={["fade"]}>
+    
+    <Appear>
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            Zeit sich zu entscheiden ...
+        </Heading>
+
+    </Appear>
+
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://1.bp.blogspot.com/-WB5xpHnbJxU/UOmJ6pObouI/AAAAAAAAblQ/XX_QlB0fWWc/s1600/wall-street-bull.jpg">
+    
+
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            Aber ...
+        </Heading>
+
+</Slide>
+
+
+<Slide 
+    bgImage="http://1.bp.blogspot.com/-WB5xpHnbJxU/UOmJ6pObouI/AAAAAAAAblQ/XX_QlB0fWWc/s1600/wall-street-bull.jpg">
+    
+
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+            Haben wir die Dinge wirklich im Blick?
+        </Heading>
+
+</Slide>
+
+
+
+
+
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=KB_lTKZm1Ts"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://1.bp.blogspot.com/-WB5xpHnbJxU/UOmJ6pObouI/AAAAAAAAblQ/XX_QlB0fWWc/s1600/wall-street-bull.jpg">
+    
+    
+    <h1 style = {{ color: "white"}} >Zur Sicherheit</h1>
+    <Appear>
+    <img src = "http://ludicmedia.de/Resources/Staatsanleihen.jpg"  width = {"75%"}  border= {25} />
+    </Appear>
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://www.landtag-niedersachsen.de/ltnds/image/1363.jpg">
+    
+
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }} >
+        Zur Abstimmung!
+        </Heading>
+
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Panic.jpg">
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black",
+               fontSize: "7vw"
+            }} >
+        Fast Forward 2022
+        </Heading>
+
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/CivilWar.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="https://www.srf.ch/iapp/image/4632358/3/fluechtlinge_stuermen_grenze_zu_spanien@1x.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Jens_Spahn.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/crash.jpg">
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black",
+               fontSize: "10vw"
+            }} >
+        4.4.2022
+        </Heading>
+
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Lotterie.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Geisterstadt.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+    
+    <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>Geld - ein knappgehaltenes Nichts
+    </Heading>
+</Slide>
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+    
+    <h1>Und die Zentralbank?</h1>
+    
+    <Appear>
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>Ein Institut zur Wahrung der Nichtswürdigkeit</Heading>
+    </Appear>
+    
+</Slide>
+
+
+<Slide 
+    bgImage="https://www.wolf.eu/fileadmin/Wolf_Daten/Bilder/Headerbilder/header_wolkenkuenstler.jpg" 
+    transition={["fade"]}>
+    
+    <h1 style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>Wo das Nichts nicht mehr eingehegt werden kann ...
+    </h1>
+    
+    <Appear>
+        <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>breitet sich Nihilismus aus</Heading>
+    </Appear>
+    
+</Slide>
+
+
+<Slide 
+    bgImage="http://www.schrott-autoankauf.de/wp-content/uploads/2016/11/Fotolia_70346985_M.jpg" 
+    transition={["fade"]}>
+    <Appear>
+    <Heading style = 
+            {{ color: "white",
+               webkitFilter: "grayscale(100%)",
+               textShadow: "2px 2px black"
+            }}>singt man das Lob
+    </Heading>
+    </Appear>
+    
+    <Appear>
+    <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>der Abwrackprämie
+    </Heading>
+    </Appear>
+    
+</Slide>
+
+
+<Slide 
+    bgImage="http://www.handelszeitung.ch/sites/handelszeitung.ch/files/imagecache/blog_header_1167/blog_images/dollar-bills.jpg?8" 
+    transition={["fade"]}>
+    <Appear>
+    <Heading style = 
+            {{ color: "white",
+               webkitFilter: "grayscale(100%)",
+               textShadow: "2px 2px black"
+            }}>Heilkoptergeld
+    </Heading>
+    </Appear>
+    
+    <Appear>
+    <Heading style = 
+            {{ color: "white",
+               textShadow: "2px 2px black"
+            }}>Grundeinkommen
+    </Heading>
+    </Appear>
+    
+</Slide>
+
+
+
+<Slide 
+    bgImage="https://pbs.twimg.com/media/CviA4JyWAAAE9zF.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="https://static1.squarespace.com/static/5801f9b09de4bbaafad2843b/t/59669ba8b11be10fca21af9e/1499896757116/blockchain-data-digest-consortia-fx-patent-intellectual-property-investment.jpg?format=1500w" 
+    transition={["fade"]}>
+</Slide>
+
+<Slide 
+    bgImage="http://capgemini.ft.com/partners/capgemini-FT/cacheDirectory/HTMLcontributions/img/2088_HIGHLIGHT_FT.jpeg?date=2016-04-29-14:43:00" 
+    transition={["fade"]}>
+    
+    
+    <Appear>
+    <Heading style = 
+            {{ color: "white",
+               textShadow: "5px 5px 10px black"
+            }}>Blockchain
+    </Heading>
+    </Appear>
+    
+</Slide>
+
+
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=-7xvqQeoA8c"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=5YDIzeW42hg"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=KX8bbmdJpbg"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=FtWvUKW0ibQ"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+
+<Slide 
+    bgImage="http://cdn.pymnts.com/wp-content/uploads/2016/10/stripe-radar-machine-learning-fraud-prevention.jpg" 
+    transition={["fade"]}>
+
+    <Well>
+    
+    <BlockQuote>
+          <Quote style = {{ fontSize: "26px", lineHeight: "40px"}} >            
+            Wir reden von der Digitalisierung, die sich in Gestalt des Cobots, also des Roboterkollegen, aber auch in Gestalt von abstrakten Programmen artikuliert. Ich zeige ihnen hier ein Programm, das noch aus dem Jahr 2017 stammt – aber mithilfe von Machine Learning Algorithmen Ergebnisse zeitigt, die der eines Menschen nahe kommen. 
+          
+          </Quote>
+        
+  
+    </BlockQuote>
+    
+    </Well>
+
+
+</Slide>
+
+
+
+
+
+
+<Slide 
+    transition={["fade"]}>
+
+<IFrame address = "https://deepl.com/translator">
+
+</IFrame>
+</Slide>
+
+
+
+<Slide 
+    transition={["fade"]}>
+<IFrame address = "https://deepl.com/translator">
+</IFrame>
+</Slide>
+
+<Slide 
+    transition={["fade"]}>
+
+<IFrame address ="http://www.finanzen.net/chart/iRobot">
+   
+</IFrame>
+</Slide>
+
+
+<Slide 
+    transition={["fade"]}>
+
+<IFrame address ="http://www.finanzen.net/chart/Intuitive_Surgical">
+</IFrame>
+</Slide>
+
+
+
+<Slide style = {{ background: "black"}}
+    transition={["fade"]}>
+    <VideoPlayer
+    url="https://www.youtube.com/watch?v=slBWdZS45rI"
+    playing
+    height= { 640 }
+    width = {1280 }
+    />
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Polizei.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+
+<Slide style = {{ background: "white"}}
+    transition={["fade"]}>
+        <img src = "https://realinvestmentadvice.com/wp-content/uploads/2013/03/1offthestreet_Ninja-Loans.jpg"  width = {"30%"}  border= {25} />
+        <h1>No Income, No Job, No Assets</h1>
+    
+</Slide>
+
+
+
+
+<Slide 
+    bgImage="https://businessfirstfamily.com/wp-content/uploads/2016/01/student-loan-refinance-money.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+<Slide 
+    bgImage="https://businessfirstfamily.com/wp-content/uploads/2016/01/student-loan-refinance-money.jpg" 
+    transition={["fade"]}>
+
+    <Heading style = 
+            {{ color: "tomato",
+                fontSize: "100px",
+               textShadow: "2px 2px 3px black",
+               marginBottom: "60px"
+            }}>Scheinproduktion</Heading>
+            
+        <img src = "https://6sigma.com/wp-content/uploads/2017/06/fake.jpg"  width = {"40%"}  border= {25} />
+
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://burgerrevolution.ca/themes/site_themes/br/images/home-bg.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Book2.jpg" 
+    transition={["fade"]}>
+
+</Slide>
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/chalkboard.jpg" 
+    transition={["fade"]}>
+    <h1 style ={{
+        color: "white",
+        textShadow: "2px 2px 30px white",
+        fontSize: "120px"
+    }}>x = x<sup>n</sup></h1>
+
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/Dividuum.jpg" 
+    transition={["fade"]}>
+</Slide>
+
+
+
+<Slide 
+    bgImage="http://ludicmedia.de/Resources/chalkboard.jpg" 
+    transition={["fade"]}>
+    
+    <img src = "http://www.gagfire.com/wp-content/uploads/2015/04/funny-HD-images-2015-monalisa-iphone-selfie-1024x1021.jpg"  width = {"50%"}  border= {25} />
+
+</Slide>
+
+
+<Slide 
+    bgImage="http://burgerrevolution.ca/themes/site_themes/br/images/home-bg.jpg" 
+    transition={["fade"]}>
+    
+        <h1 style ={{
+        color: "white",
+        textShadow: "2px 2px 30px white",
+        fontSize: "90px"
+    }}>2025 - Was tun?</h1>
+    
+</Slide>
+
+
+
+
+<Slide 
+    transition={["fade"]}
+    bgImage="https://images.vice.com/vice/images/articles/meta/2016/05/26/fighting-fascists-streets-poland-nineties-876-1464266210.jpg" >
+    
+        <Appear>
+        <h1 style ={{
+        color: "black",
+        textShadow: "2px 2px 30px white",
+        fontSize: "90px"
+    }}>Robotik</h1>            
+        </Appear>
+        
+        <Appear>
+        <h1 style ={{
+        color: "red",
+        textShadow: "2px 2px 30px white",
+        fontSize: "90px"
+    }}>FinTech</h1>            
+        </Appear>
+        
+        <Appear>
+        <h1 style ={{
+        color: "gold",
+        textShadow: "2px 2px 30px white",
+        fontSize: "90px"
+    }}>E-Learning</h1>            
+        </Appear>
+        
+
+    
+</Slide>
+
+
+
+
+
+<Slide 
+    bgImage="http://burgerrevolution.ca/themes/site_themes/br/images/home-bg.jpg" 
+    transition={["fade"]}>
+    
+        <h1 style ={{
+        color: "white",
+        textShadow: "2px 2px 30px white",
+        fontSize: "200px"
+    }}>Vote !</h1>
+    
+</Slide>
+
+
+
+
+
+

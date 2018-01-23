@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "python -m SimpleHTTPServer 3000"
+    "server": "python -m SimpleHTTPServer 3000",
+    "host": "C:\\Python27\\python.exe -m SimpleHTTPServer 8000"
   },
   "keywords": [
     "AIML",
@@ -14,5 +15,7 @@
   "author": "phalanstere <burckhardt@ludicmedia.de> (https://github.com/Phalanstere)",
   "license": "ISC",
   "dependencies": {
+    "ml-sentiment": "^2.0.7",
+    "universal_bot": "0.0.32"
   }
 }

@@ -48,6 +48,14 @@ function Lists( div ) {
     this.checkKeys = function( ev ) {
         console.log( ev.code );
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -407,6 +415,7 @@ this.mark_primenumber = function() {
 
 
     this.init = function() {
+        var DynamicCover = new Cover();
         self.navigation();
         self.intro();
     }

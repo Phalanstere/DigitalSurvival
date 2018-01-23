@@ -12,7 +12,7 @@ if (typeof console  != "undefined")
 console.log = function(message) {
     console.olog(message);
     var el = document.getElementById("status");
-    el.innerHTML = message;
+    if ( el) el.innerHTML = message;
 };
 console.error = console.debug = console.info =  console.log
 
@@ -122,6 +122,14 @@ function Functions( div ) {
 
     this.checkKeys = function( ev ) {
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -671,6 +679,7 @@ function Functions( div ) {
 
 
     this.init = function() {
+        var DynamicCover = new Cover();
         self.navigation();
         self.intro();
     }

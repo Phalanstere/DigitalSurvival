@@ -94,6 +94,14 @@ function Objekt( div ) {
 
     this.checkKeys = function( ev ) {
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -568,6 +576,7 @@ function Objekt( div ) {
 
 
     this.init = function() {
+        var DynamicCover = new Cover();
         self.navigation();
         self.intro();
         self.car();

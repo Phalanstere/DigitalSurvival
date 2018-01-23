@@ -157,8 +157,8 @@ function Variables (div) {
 
         // str += c;
         for (var i = 0; i < 16; i++) {
-            var cl = "tinyb";
-            if (c[i] === '0') cl = "tiny";
+            var cl = "tiny";
+            if (c[i] === '0') cl = "tinyb";
 
             str += '<div class = "' + cl + '"></div>';            
         }
@@ -466,6 +466,14 @@ function Variables (div) {
     this.checkKeys = function( ev ) {
         console.log( ev.code );
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -542,8 +550,8 @@ function Variables (div) {
     }
 
     this.intro = function() {
-        var s = "Wunschmaschine";
-        var el = document.getElementById("big");
+        var s = '<div class = "big"></div>';
+        var el = document.getElementById(div);
         el.innerHTML = s;
     }
 
@@ -567,6 +575,7 @@ function Variables (div) {
 var v; 
 
 function startVar() {
+    var DynamicCover = new Cover();
     v = new Variables("Vars");
 }
 

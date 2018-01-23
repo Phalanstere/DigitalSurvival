@@ -428,4 +428,29 @@ text-align: center;
     width: 90%;
     margin-left: 5%;
     box-shadow: 0 0 4px black;
+
 }
+
+
+#segment {
+    width: 600px;
+    background: lightskyblue;
+    height: 20px;
+}
+
+#reader {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    height: 90%;
+    overflow: scroll;
+    background: gainsboro;
+    border:solid 1px black;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 400;
+    line-height: 26px;
+    
+}
+
+

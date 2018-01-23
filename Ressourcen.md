@@ -9,15 +9,33 @@ Wenn Sie Blut geleckt haben und gerne weiterpraktizieren möchten, ist Ihnen fol
 [Microsoft Visual Studio](https://code.visualstudio.com)
 
 
-Ein Gratis-Programmierungswerkzeug von **Microsoft**. Vor einigen Jahren noch hat Microsoft seine Programmierwerkzeuge teuer verkauft, jetzt hat man den Zeitgeist aufgesogen und stellt dieses hoch elaborierte Werkzeug kostenlos bereit. Ebenfalls kostenlose Alternativen sind **Ace** (das Sie in meiner Programmierumgebung benutzen) und **Aptana**.
+Ein Gratis-Programmierungswerkzeug von **Microsoft**. Vor einigen Jahren noch hat Microsoft seine Programmierwerkzeuge teuer verkauft, jetzt hat man den Zeitgeist aufgesogen und stellt dieses hoch elaborierte Werkzeug kostenlos bereit. Ebenfalls kostenlose Alternativen sind **Ace** (das Sie in meiner Programmierumgebung benutzen), **Aptana** und **Atom**.
+
+[Aptana](http://www.aptana.com/)
+[Ace](https://ace.c9.io/)
+[Atom](https://atom.io/)
 
 
 
 Wenn Sie tiefer einsteigen wollen, ist Ihnen ein Handbuch zum objektorientierten Programmieren sowie **node.js** anempfohlen. Auch **node.js** gibt es umsomst.
 
+[Atom](https://nodejs.org/en/)
+
+
 Ein großer Vorzug der Webtechnologien ist, dass Sie (mithilfe solcher Werkzeuge wie **electron**) plattformagnostische Software generieren können, die wohl auf Linux, OSX oder Windows läuft.
 
 Das verändert das Paradigma von Software grundlegend.
+
+[Atom](https://electronjs.org/)
+
+Studieren Sie auch, was der der **Node Packet Manager** (npm) an Angebioten bereithält.
+
+[npm](https://www.npmjs.com/)
+
+Eine gute Ressource, um sich mit Javascript Befehlen vertraut zu machen:
+
+[W3Schools](https://www.w3schools.com/default.asp)
+
 
 # Was die Evaluierung von Software-Projekten anbelangt
 
@@ -35,6 +53,11 @@ Das ist eine Gefahrenquelle ersten Ranges.
 
 Achten Sie darauf, dass der Programmierer bei seiner Arbeit **Tests** benutzt (idealweise benutzt er die **tape** oder die **mocha** Library).
 Tests garantieren eine gewisse Intersubjektivität des Codes: Sie werden im Zweifelsfall den Weggang eines Programmierers verschmerzen können.
+
+# Rekrutierung
+
+Auch was die Rekrutierung von Programmieren anbelangt, sind Plattformen wie **guthub** und **npm** unendlich hilfreich. Bei großen Agenturen, die Programmierer vermitteln (wie **gulü** oder der **Hayes AG**) ist dies noch nicht angekommen, aber wendige Headhunter sind längst dazu übergegangen, die Profile und Aktivitäten einzelner Programmierer zu studieren und sie direkt anzugehen. **Google** hat mit seinem **Summer of Code** (wo Open Source Projekte unzterstützt werden) geradezu ein Geschäftsmodell daraus gemacht - mit dem Ziel, sich die Programmiererschar geneigt zu machen.
+
 
 # Pflegen Sie einen gesunden Skeptizismus
 Seien Sie skeptisch, was den Verkaufssprech anbelangt (bei dem Big Data, AI, Machine Learning etc. längst zu Zauberwörter avanciert sind)

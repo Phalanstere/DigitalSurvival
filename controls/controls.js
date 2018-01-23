@@ -88,6 +88,14 @@ function Control( div ) {
 
     this.checkKeys = function( ev ) {
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -771,6 +779,7 @@ function Control( div ) {
 
 
     this.init = function() {
+        var DynamicCover = new Cover();
         self.navigation();
         self.intro();
     }

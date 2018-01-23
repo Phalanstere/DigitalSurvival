@@ -79,6 +79,14 @@ function Capsulation( div) {
     this.checkKeys = function( ev ) {
         console.log( ev.code );
         switch( ev.code) {
+            case 'PageDown':
+                self.forward();
+            break;
+
+            case 'PageUp':
+                self.backward();
+            break;
+
             case 'ArrowRight':
                 self.forward();
             break;
@@ -1004,8 +1012,7 @@ this.search_wikipedia = function() {
 
 
     this.news_aggregator = function( input ) {
-        // var el = document.getElementById(div);
-        // el.innerHTML = "";
+        window.newslist = list;
 
         var list = [];
         list.push( { 
@@ -1392,6 +1399,7 @@ this.search_wikipedia = function() {
 
 
     this.init = function() {
+        var DynamicCover = new Cover();
         self.intro();
         self.navigation();
 
