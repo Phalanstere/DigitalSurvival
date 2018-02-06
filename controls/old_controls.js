@@ -22,163 +22,67 @@ function backgroundColor ( col ) {
 function Control( div ) {
     var self = this;
 
-    this.open_next_lesson = function() {
-        alert("nächste Stunde");
-    }
-
-    this.next_lesson = function() {
-
-        document.getElementById("editor").remove();
-        document.getElementById("Explanation").remove();
-
-        var s = '<div onclick = "ctr.open_next_lesson()" class ="NEXT">';
-        s += "▶";
-        s += '</div>';
-        var stage = document.getElementById("Vars");
-        stage.innerHTML = s;
-
-
-   
-
-    }
-
-    this.round = 0;
-
-    this.is_running = function() {
-        self.round ++;
-
-        if ( ! self.roundcounter ) {
-                self.roundcounter = document.getElementById("roundcounter");
-            }
-
-        self.roundcounter.innerHTML = self.round;
-    }
-
-    this.runner_page = function()  {
-        this.runner = new runner();
-        var el = document.getElementById("big");
-        TweenMax.to(el, 0.7, { marginLeft: '1000px', 
-            ease: 'Elastic.easeIn.config(0.2, 0.7)',
-            opacity: 0});
-
-        var figure = document.getElementById("runner");
-
-        var tl = new TimelineMax({repeat:100, onComplete: self.finale});
-        self.tl = tl;
-        tl.add( TweenLite.to(figure, 1.6, {rotation: 360 }) );
-        tl.play();
-
-        self.interval = setInterval( self.is_running, 1600);
-    }
 
 
 
-    this.remove_runner = function() {
-        var el = document.getElementById("stadium");
-        TweenMax.to(el, 0.7, { left:"2200px", onComplete: function() {
-            self.tl.kill();
-            clearInterval( self.interval );
-            el.remove();
-        }});
-    }
 
     this.process = function() {
         console.log("Pointer steht bei " + self.pct);
 
         switch( self.pct ) {
-
             case 0:
                 self.intro();
-               
             break;
 
             case 1:
-                // var b = new Boolean();
-               self.runner_page();
-            break;
-
-            case 2:
-                self.remove_runner();
                 self.circle();
             break;
 
-
-            case 3:
-                self.start_loop();
-            break;
-
-            case 4:
+            case 2:
                 console.log("NUMMER 2");
                 self.add_list();
             break;
 
-
-            case 5:
-                self.update_editor();
-            break;
-
-            case 6:
-                self.update_editor2();
-            break;
-
-            case 7:
-                self.start_loop();
-                console.log("KOMPLEX");
-            break;
-
-            case 8:
+            case 3:
                 self.complex();
                 console.log("KOMPLEX");
             break;
 
-            case 9:
-                self.start_complex();
-            break;
-
-
-            case 10:
+            case 4:
                 self.array_explanation();
             break;
 
-            case 9:
+            case 5:
                 self.various_arrays();
             break;
 
-            case 10:
+            case 6:
                 self.filled_arrays();
             break;
 
-            case 11:
+            case 7:
                 self.array_object();
             break;
 
-            case 12:
+
+            case 8:
                 self.introduce_objects();
             break;
 
-            case 13:
+            case 9:
                 self.eternal_loop();
             break;
 
-            case 14:
+            case 10:
                 self.show_operators();
-            break;
-
-            case 15:
-                self.next_lesson();
             break;
 
 
             default:
-               self.open_next_lesson();
+                alert("Problem");
             break;
         }
 
-    }
-
-
-    this.open_next_lesson = function() {
-        window.open("http://localhost:8000/capsulation.html");
     }
 
 
@@ -199,27 +103,10 @@ function Control( div ) {
             case 'ArrowLeft':
                 self.backward();
             break;
-
-            case 'ArrowUp':
-            self.forward();
-            break;
-
-            case 'ArrowDown':
-                self.backward();
-            break;
-
-            case 'Tab':
-                self.start_loop();
-            break;
-
         }
 
     }
 
-    
-    this.trigger_loop = function() {
-
-    }
 
 
     this.navigation = function() {
@@ -250,9 +137,6 @@ function Control( div ) {
     this.first  = false;
     this.second = false;
     
-
-
-
 
     this.complex_loop = function() {
         var editor = self.editor;
@@ -311,7 +195,7 @@ function Control( div ) {
 
         if (self.line === 15) {
             var el = document.getElementById("console3");
-            var s = self.list;
+            var s = self.list.length;
             el.innerHTML = s;
         }
 
@@ -422,78 +306,9 @@ function Control( div ) {
         e.className = "test-div";
         e.id = "console2";
         document.getElementById("full").appendChild(e);
-    }
 
-
-    this.editor_sequence = function() {
-        setTimeout(self.update_editor, 2000);
-        setTimeout(self.update_editor2, 5000);
-    }
-
-    this.update_editor = function() {
-        var editor = self.editor;
-        editor.setValue("")
-        this.editor = editor;
-
-        var nlt = "\n\t";
-        var nltt = "\n\t\t";
-        var s; 
-
-        editor.session.insert(editor.getCursorPosition(), "function loop( ) {");
-
-        s = '\n\tvar list = [];';
-        editor.session.insert(editor.getCursorPosition(), s);
-        
-        s = nlt + "for (var i = 0; i < 10; i++) {";
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + nlt + nlt + nlt + nlt;
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + 'console.log("Aktueller Wert: " + i);';
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + "} // Inkrement der Variable";
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        editor.session.insert(editor.getCursorPosition(), "\n}");
         
     }
-
-
-    this.update_editor2 = function() {
-        var editor = self.editor;
-        editor.setValue("")
-        this.editor = editor;
-
-        var nlt = "\n\t";
-        var nltt = "\n\t\t";
-        var s; 
-
-        editor.session.insert(editor.getCursorPosition(), "function loop( ) {");
-
-        s = '\n\tvar list = [];';
-        editor.session.insert(editor.getCursorPosition(), s);
-        
-        s = nlt + "for (var i = 0; i < 10; i++) {";
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + nlt + nlt + 'list.push(i);'
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + nlt;
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + 'console.log("Aktueller Wert: " + i);';
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        s = nlt + "} // Inkrement der Variable";
-        editor.session.insert(editor.getCursorPosition(), s);
-
-        editor.session.insert(editor.getCursorPosition(), "\n}");
-
-    }
-
 
 
     this.complex = function() {
@@ -506,12 +321,17 @@ function Control( div ) {
         var s; 
 
         editor.session.insert(editor.getCursorPosition(), "function loop( ) {");
+
         s = nlt + "var list = []";
         editor.session.insert(editor.getCursorPosition(), s);
+        
         s = nlt + "for (var i = 0; i < 10; i++) {";
         editor.session.insert(editor.getCursorPosition(), s);
+
+
         s = nlt;
         editor.session.insert(editor.getCursorPosition(), s);
+
         s = nlt + "list.push(i)";
         editor.session.insert(editor.getCursorPosition(), s);
 
@@ -520,6 +340,7 @@ function Control( div ) {
 
         s = nlt + nlt;
         editor.session.insert(editor.getCursorPosition(), s);
+
 
         s = nlt + 'console.log("Aktueller Wert: " + i)';
         editor.session.insert(editor.getCursorPosition(), s);
@@ -539,7 +360,7 @@ function Control( div ) {
         s = nlt + "list.shift();";
         editor.session.insert(editor.getCursorPosition(), s);
        
-        s = nlt + 'console.log( list );';
+        s = nlt + 'console.log( list.length );';
         editor.session.insert(editor.getCursorPosition(), s);
 
         s = nlt + nlt;
@@ -875,7 +696,6 @@ function Control( div ) {
 
 
     this.init_ace = function() {
-
         var s = '<div id = "editor">'
         s += '</div>';
 
@@ -913,6 +733,7 @@ function Control( div ) {
         s = nlt + nlt + nlt + nlt + nlt;
         editor.session.insert(editor.getCursorPosition(), s);
 
+
         s = nlt + 'console.log("Aktueller Wert: " + i)';
         editor.session.insert(editor.getCursorPosition(), s);
 
@@ -923,7 +744,7 @@ function Control( div ) {
         editor.session.insert(editor.getCursorPosition(), "\n}");
 
         s = "";
-        s += '<div id = "big" class = "big"></div>';
+        s += '<div class = "big"></div>';
         var el = document.getElementById(div);
         el.innerHTML = s;
 
@@ -951,7 +772,7 @@ function Control( div ) {
 
     this.intro = function() {
         var s = "";
-        s += '<div id = "big" class = "big">Schleifen</div>';
+        s += '<div class = "big">Schleifen</div>';
         var el = document.getElementById(div);
         el.innerHTML = s;
     }

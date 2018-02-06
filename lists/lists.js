@@ -24,6 +24,7 @@ function Lists( div ) {
 
             case 3:
               self.show_objects();
+              self.show_images();
             break;
 
             case 4:
@@ -34,13 +35,35 @@ function Lists( div ) {
                 self.find_double();
             break;
 
-            case 5:
-                
+            case 6:
+                self.next_lesson();
             break;
 
-            case 6:
+            case 7:
+                self.open_next_lesson();
             break;
         }
+
+    }
+
+
+    this.show_images = function() {
+        
+    }
+
+    this.open_next_lesson = function() {
+        window.open("http://ludicmedia.de/Courses/DigitalSurvival/controls.html");
+    }
+
+
+    this.next_lesson = function() {
+        var s = '<div onclick = "v.open_next_lesson()" class ="NEXT">';
+        s += "▶";
+        s += '</div>';
+        var stage = document.getElementById("Vars");
+        stage.innerHTML = s;
+
+        document.getElementById("status").remove();
 
     }
 
@@ -61,6 +84,14 @@ function Lists( div ) {
             break;
 
             case 'ArrowLeft':
+                self.backward();
+            break;
+
+            case 'ArrowUp':
+            self.forward();
+            break;
+
+            case 'ArrowDown':
                 self.backward();
             break;
         }

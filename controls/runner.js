@@ -11,7 +11,7 @@ var runner = function() {
             s += '<img src ="/controls/flag.gif"/>';
         s += '</div>';
 
-        s += '<div id = "roundcounter" class ="roundcounter">7';
+        s += '<div id = "roundcounter" class ="roundcounter">0';
         s += '</div>';
 
         s += '<div id = "runner" class ="runner">';

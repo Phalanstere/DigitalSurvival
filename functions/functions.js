@@ -115,8 +115,32 @@ function Functions( div ) {
                 self.equation3();
             break;
 
+            case 22:
+                self.next_lesson();
+            break;
+
+            case 23:
+                self.open_next_lesson();
+            break;
+
         }
 
+    }
+
+
+    this.open_next_lesson = function() {
+        window.open("http://ludicmedia.de/Courses/DigitalSurvival/list.html");
+    }
+
+    this.next_lesson = function() {
+        var s = '<div onclick = "v.open_next_lesson()" class ="NEXT">';
+        s += "▶";
+        s += '</div>';
+        var stage = document.getElementById("Vars");
+        stage.innerHTML = s;
+
+        document.getElementById("explanation").remove();
+        document.getElementById("status").remove();
     }
 
 
@@ -137,9 +161,18 @@ function Functions( div ) {
             case 'ArrowLeft':
                 self.backward();
             break;
+
+            case 'ArrowUp':
+                self.forward();
+            break;
+
+            case 'ArrowDown':
+                self.backward();
+            break;
         }
 
     }
+
 
 
     this.navigation = function() {
@@ -586,7 +619,7 @@ function Functions( div ) {
 
     this.equation = function() {
 
-        var s = '<div class = "Explanation">';
+        var s = '<div id = "explanation" class = "Explanation">';
         s += 'Ein Gleichheitszeichen (<span class = "comma2">=</span>) ist eine Zuweisung, also eigentlich <span class = "comma2">⇨</span>';
         s += '</div>';
 
@@ -616,7 +649,7 @@ function Functions( div ) {
 
 
     this.equation3 = function() {
-        var s = '<div class = "Explanation">';
+        var s = '<div id = "explanation" class = "Explanation">';
         s += 'Bei drei Gleichheitszeichen (<span class = "comma2">===</span>) werden Wert und Typ verglichen</span>';
         s += '</div>';
 
@@ -679,6 +712,7 @@ function Functions( div ) {
 
 
     this.init = function() {
+        v = this;
         var DynamicCover = new Cover();
         self.navigation();
         self.intro();
@@ -689,6 +723,8 @@ function Functions( div ) {
 
 }
 
+
+var v;
 
 var fn; 
 
