@@ -23,6 +23,43 @@ function Capsulation( div) {
 
     var self = this;
 
+
+this.utterance = function() {
+    var s = "Haben Sie das noch im Kopf?"
+    var msg = new SpeechSynthesisUtterance(s);
+    window.speechSynthesis.speak(msg);
+}
+
+
+
+
+this.open_next_lesson = function() {
+    window.open("http://www.ludicmedia.de/DS/DigitalS/InternetGuide/");
+}
+
+
+this.next_lesson = function() {
+
+    document.getElementById("articles").remove();
+    document.getElementById("news").remove();
+    document.getElementById("cloud").remove();
+    document.getElementById("Microphone").remove();
+    document.getElementById("question").remove();
+    document.getElementById("editor").remove();
+    document.getElementById("Segment").remove();
+    document.getElementById("Dictation").remove();
+    document.getElementById("full").remove();
+
+
+    var s = '<div onclick = "ctr.open_next_lesson()" class ="NEXT">';
+    s += "▶";
+    s += '</div>';
+    var stage = document.getElementById("Vars");
+    stage.innerHTML = s;
+
+}
+
+
  this.process = function() {
         switch( self.pct ) {
             case 0:
@@ -31,6 +68,10 @@ function Capsulation( div) {
                
             case 1:
                 self.init_ace();
+            break;
+
+            case 2:
+                self.utterance();
             break;
 
             case 2:
@@ -51,25 +92,47 @@ function Capsulation( div) {
             break;
 
             case 6:
-                self.task();
+                self.weather_servant();
             break;
 
             case 7:
-                self.http_communication();
+                self.task();
             break;
 
             case 8:
-                self.images();
+                self.http_communication();
             break;
 
             case 9:
-                self.news_aggregator();
+                self.images();
             break;
 
             case 10:
-                // self.news_aggregator();
+                self.news_aggregator();
             break;
 
+            case 11:
+                // self.news_aggregator();
+                self.news_servant();
+            break;
+
+            case 12:
+                // self.news_aggregator();
+                self.news_servant();
+            break;
+
+            case 13:
+            // self.news_aggregator();
+                self.news_servant();
+            break;
+
+            case 15:
+                self.next_lesson();
+            break;
+
+            case 16:
+                self.open_next_lesson()
+            break;
 
         }
 
@@ -94,6 +157,16 @@ function Capsulation( div) {
             case 'ArrowLeft':
                 self.backward();
             break;
+
+            case 'ArrowUp':
+                self.forward();
+            break;
+
+            case 'ArrowDown':
+                self.backward();
+            break;
+
+
         }
 
     }
@@ -769,7 +842,7 @@ this.search_wikipedia = function() {
 
         s += '</div>';
 
-        s += '<div class = "console">';
+        s += '<div id = "console" class = "console">';
 
             s += '<div onClick = "cp.test()" class = "button" id = "submit">';
                 s += '<div class ="Imprint">TEST</div>';
