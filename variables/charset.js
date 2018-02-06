@@ -1,3 +1,5 @@
+
+
 function CharSet( no, div ) {
 
 var self = this;
@@ -44,7 +46,7 @@ this.init = function() {
         var c = String.fromCharCode( i );
         self.list.push(c);
 
-        s += '<div id = "' + id + '" class = "charsetItem">' + c + '</div>';
+        s += '<div onmouseover = "hilite(this)" id = "' + id + '" class = "charsetItem">' + c + '</div>';
     }
 
     s += '</div>';
