@@ -1421,6 +1421,10 @@ function Variables (div) {
                 self.next_lesson();
             break;
 
+            case 16:
+                self.open_next_lesson();   
+            break;
+
         }
     }
 
