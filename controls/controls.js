@@ -37,9 +37,6 @@ function Control( div ) {
         var stage = document.getElementById("Vars");
         stage.innerHTML = s;
 
-
-   
-
     }
 
     this.round = 0;
