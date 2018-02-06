@@ -638,7 +638,7 @@ function Variables (div) {
 
         s += '<div class ="bracket">}</div>';
 
-        s += '<div id = "heaven" class = "heaven"><img src = "/variables/heaven.png"/><div';
+        s += '<div id = "heaven" class = "heaven"><img src = "./variables/heaven.png"/><div';
 
 
 
