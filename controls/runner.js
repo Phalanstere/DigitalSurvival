@@ -8,14 +8,14 @@ var runner = function() {
         s += '</div>';
 
         s += '<div class ="flag">';
-            s += '<img src ="/controls/flag.gif"/>';
+            s += '<img src ="./controls/flag.gif"/>';
         s += '</div>';
 
         s += '<div id = "roundcounter" class ="roundcounter">0';
         s += '</div>';
 
         s += '<div id = "runner" class ="runner">';
-            s += '<img src ="/controls/runner4.gif"/>';
+            s += '<img src ="./controls/runner4.gif"/>';
         s += '</div>';
 
 
