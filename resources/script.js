@@ -92,6 +92,10 @@ var Manager = function() {
         });
     }
 
+    this.open_blocks = function() {
+        window.open("https://github.com/Phalanstere/DigitalSurvival/blob/master/BuildingBlocks.md", "_blank");
+    }
+
     this.open_next_lesson = function() {
         window.open(" http://ludicmedia.de:17777/DigitalS/Lektion01/", "_blank"); 
     }
