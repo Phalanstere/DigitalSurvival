@@ -12,21 +12,23 @@ Wenn Sie Blut geleckt haben und gerne weiterpraktizieren möchten, ist Ihnen fol
 Ein Gratis-Programmierungswerkzeug von **Microsoft**. Vor einigen Jahren noch hat Microsoft seine Programmierwerkzeuge teuer verkauft, jetzt hat man den Zeitgeist aufgesogen und stellt dieses hoch elaborierte Werkzeug kostenlos bereit. Ebenfalls kostenlose Alternativen sind **Ace** (das Sie in meiner Programmierumgebung benutzen), **Aptana** und **Atom**.
 
 [Aptana](http://www.aptana.com/)
+
 [Ace](https://ace.c9.io/)
+
 [Atom](https://atom.io/)
 
 
 
 Wenn Sie tiefer einsteigen wollen, ist Ihnen ein Handbuch zum objektorientierten Programmieren sowie **node.js** anempfohlen. Auch **node.js** gibt es umsomst.
 
-[Atom](https://nodejs.org/en/)
+[Node.js](https://nodejs.org/en/)
 
 
 Ein großer Vorzug der Webtechnologien ist, dass Sie (mithilfe solcher Werkzeuge wie **electron**) plattformagnostische Software generieren können, die wohl auf Linux, OSX oder Windows läuft.
 
 Das verändert das Paradigma von Software grundlegend.
 
-[Atom](https://electronjs.org/)
+[Electron](https://electronjs.org/)
 
 Studieren Sie auch, was der der **Node Packet Manager** (npm) an Angebioten bereithält.
 

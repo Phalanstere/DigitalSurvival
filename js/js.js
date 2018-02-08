@@ -50,7 +50,7 @@ function Control( div ) {
         document.body.appendChild(div);
 
         var json = document.getElementById("JSON");
-        TweenLite.to(json, .3, { scale: 1 });
+        TweenLite.to(json, .3, { opacity: 1, scale: 1 });
 
         div = document.createElement("div");
         div.id = "AJAX";
@@ -71,7 +71,7 @@ function Control( div ) {
         document.body.appendChild(div);
 
         var mongo = document.getElementById("mongo");
-        TweenLite.to(mongo, .7, { scale: 1 });
+        TweenLite.to(mongo, .7, { opacity: 1, scale: 1 });
 
 
         div = document.createElement("div");
@@ -82,7 +82,7 @@ function Control( div ) {
         document.body.appendChild(div);
 
         var couch = document.getElementById("couch");
-        TweenLite.to(couch, .7, { scale: 1 });
+        TweenLite.to(couch, .7, { opacity: 1, scale: 1 });
 
     }
 
@@ -200,6 +200,13 @@ function Control( div ) {
 
 
    this.logos_fly_in = function() {
+    var js = document.getElementById("JS");
+        TweenMax.to(js, .4, { 
+            left: 700,
+            ease: Bounce.easeOut
+            });
+
+
        var basic = document.getElementById("Basic");
 
        TweenMax.to(basic, 1.2, { 
@@ -215,20 +222,21 @@ function Control( div ) {
             left: 1600,
             width: '300px',
             height: '300px',
-            delay: 2,
+            delay: 4,
             ease: Elastic.easeOut.config(1, 0.3)
             });
 
         var Ruby = document.getElementById("Ruby");
 
         TweenMax.to(Ruby, 1.2, { 
+            delay: 7,
             y: -620
             });
 
         var csharp = document.getElementById("csharp");
         TweenMax.to(csharp, 1.2, { 
             left: 100,
-            delay: 2,
+            delay: 5,
             ease: Elastic.easeOut.config(1, 0.3)
             });
 
@@ -247,10 +255,10 @@ function Control( div ) {
                 });
         
         var Perl = document.getElementById("Perl");
-        TweenLite.to(Perl, 2.5, { ease: Back.easeOut.config(1.7), top: 100 });
+        TweenLite.to(Perl, 1.1, { ease: Back.easeOut.config(1.7), top: 100 });
 
         var flash = document.getElementById("flash");
-        TweenLite.to(flash, .3, { delay: 4, scale: 2 });
+        TweenLite.to(flash, .3, { delay: 8, scale: 1.7 });
 
    } 
 
@@ -263,10 +271,10 @@ function Control( div ) {
     TweenLite.to(Perl, 2.5, { ease: Back.easeIn.config(1.7), top: -900 });
 
     var basic = document.getElementById("Basic");
-    TweenMax.to(basic, .7, { left: -760, delay: .2, ease: Elastic.easeIn.config(0.2, 0.9) });
+    TweenMax.to(basic, .7, { left: -760, delay: 1.2, ease: Elastic.easeIn.config(0.2, 0.9) });
 
     var Java = document.getElementById("Java");
-    TweenMax.to(Java, .7, { right: 20, top: 20, width: '80px', ease: Elastic.easeIn.config(0.2, 0.9) });
+    TweenMax.to(Java, .7, { delay: 2, right: 20, top: 20, width: '80px', ease: Elastic.easeIn.config(0.2, 0.9) });
 
     var csharp = document.getElementById("csharp");
     TweenMax.to(csharp, .7, { width: '80px', ease: Back.easeIn.config(1.7) });
@@ -275,13 +283,13 @@ function Control( div ) {
     TweenMax.to(php, .7, { width: '100px', ease: Back.easeIn.config(1.7) });
 
     var JS = document.getElementById("JS");
-    TweenMax.to(JS, 3, { delay: .2, width: 600, height: 600, x: -100, y: -150, ease: Back.easeIn.config(1.7) });
+    TweenMax.to(JS, .9, { delay: .2, width: 600, height: 600, x: -100, y: -150 });
    
     var Ruby = document.getElementById("Ruby");
     TweenMax.to(Ruby, .7, { left: 50, bottom: 50, ease: Back.easeIn.config(1.7) });
 
     var flash = document.getElementById("flash");
-    TweenLite.to(flash, .5, { top: -600, scale: 0.1 });
+    TweenLite.to(flash, .5, { top: -600 });
 }
 
 
@@ -317,6 +325,9 @@ function Control( div ) {
 
         var cl = document.getElementsByClassName( 'small_bull' );
         TweenMax.staggerTo( cl, 0.5, { opacity:1 , background: 'yellow' }, 0.02 ); 
+
+        var bull = document.getElementById( 'bull' );
+        TweenLite.to(bull, 1.3, { delay: 5.2, opacity: 0 });
     }
 
 
@@ -329,8 +340,7 @@ function Control( div ) {
         var map = document.getElementById( 'map' );
         TweenLite.to(map, 1.3, { opacity: 0, onComplete: self.building_blocks });
 
-        var bull = document.getElementById( 'bull' );
-        TweenLite.to(bull, 1.3, { delay: 0.2, opacity: 0 });
+
     }
 
 
