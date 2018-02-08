@@ -119,7 +119,7 @@ Schauen wir uns diese Seite an, sehen wir, dass der Paragraph und die Überschri
 
 ## CSS
 
-UM jedoch die volle Kontrolle über das Aussehen von Websites zu erlangen, wurde eine weitere Sprachspezifikation erstellt, die sogenannten **Cascadwed Style Sheets**, kurz: **CSS**.
+UM jedoch die volle Kontrolle über das Aussehen von Websites zu erlangen, wurde eine weitere Sprachspezifikation erstellt, die sogenannten **Cascaded Style Sheets**, kurz: **CSS**.
 
 CSS wird relativ bald nach Einführung von HTML, im Jahr 1994, spezifiert.
 
@@ -307,3 +307,29 @@ Nimmt man diese Logik, so versteht man, dass die Dynamisierung von Webseiten die
 
 Facebooks **React** - Framework, das eine große Popularität gewonnen hat, folgt dieser Logik. Und wenn wir uns im weiteren auf Javascript fokussieren wollen, gehen wir mit diesem Trend konform.
 
+
+#Appendix
+
+Wir können unser Programm nun auf etwas mühsame im Browser öffnen, aber dazu gibt es eine bessere Technik.
+Wenn wir node.js installiert haben, erzeugen wir in dem Verzeichnis, in dem wir die index.html Datei angelegt haben, eine **Package.json** Datei mit folgendem Inhalt:
+
+
+```javascript
+{
+   "name": "Demo",
+   "version": "1.0.0",
+   "description": "demo project.",
+   "scripts": {
+     "lite": "lite-server --port 10001",
+     "start": "npm run lite"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+     "lite-server": "^1.3.1"
+   }
+}
+```
+
+Dann führen wir einen **npm install** im Terminal unseres Visual Studios aus, anschließend **npm start**.
+Automatisch öffnet sich unser Standard-Browser und unsere index.html Datei ist zu sehen.
