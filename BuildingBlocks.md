@@ -308,7 +308,7 @@ Nimmt man diese Logik, so versteht man, dass die Dynamisierung von Webseiten die
 Facebooks **React** - Framework, das eine große Popularität gewonnen hat, folgt dieser Logik. Und wenn wir uns im weiteren auf Javascript fokussieren wollen, gehen wir mit diesem Trend konform.
 
 
-#Appendix
+# Das Server-Programm
 
 Wir können unser Programm nun auf etwas mühsame im Browser öffnen, aber dazu gibt es eine bessere Technik.
 Wenn wir node.js installiert haben, erzeugen wir in dem Verzeichnis, in dem wir die index.html Datei angelegt haben, eine **Package.json** Datei mit folgendem Inhalt:
