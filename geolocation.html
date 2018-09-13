@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Geo-Location</title>
+    <link rel="stylesheet" type="text/css" href="variables/variables.css">
+
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQjmb6tm7hDKHpwKgfvDa0-jMUrQLldc"></script>
+
+  </head>
+  <body onload = "startVar()">
+		<div class = "stage" id = "Vars"></div>
+    <div class = "charset" id = "charset"></div>
+    <div id = "map">
+        <div id = "map_info"></div>      
+      <div id = "gmaps"></div>
+    </div>
+
+
+  </body>
+</html>
+
+
+<script type="text/javascript" src="geolocation/geolocator.min.js"></script>
+<script type="text/javascript">
+
+    geolocator.config({
+        language: "en",
+        google: {
+            version: "3",
+            key: "AIzaSyBvQjmb6tm7hDKHpwKgfvDa0-jMUrQLldc"
+        }
+    });
+
+    window.onload = function () {
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumWait: 10000,     // max wait time for desired accuracy
+            maximumAge: 0,          // disable cache
+            desiredAccuracy: 30,    // meters
+            fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
+            addressLookup: true,    // requires Google API key if true
+            timezone: true,         // requires Google API key if true
+            map: "map-canvas",      // interactive map element id (or options object)
+            staticMap: true         // map image URL (boolean or options object)
+        };
+        geolocator.locate(options, function (err, location) {
+            if (err) return console.log(err);
+            console.log(location);
+        });
+    };
+
+</script>
+
+

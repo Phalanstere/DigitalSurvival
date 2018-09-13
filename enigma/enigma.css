@@ -1,0 +1,181 @@
+.sequence {
+    position: absolute;
+    left: 25%;
+    top: 50px;
+    width: 72%;
+    height: auto;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+
+
+.character {
+    position: absolute;
+    left: 2.5%;
+    top: 50px;
+    width: 20%;
+    height: 400px;
+    font-size: 300px;
+    text-align: center;
+    font-family: monospace;   
+    text-shadow: 2px 2px 10px darkslategray;
+}
+
+.txt {
+    font-size: 32px;
+    padding: 3px;
+    border:solid 1px rgb(240,240,240);
+    float: left;
+}
+
+.hilite {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+
+.letter_container {
+    width: 80px;
+    height: auto;
+    margin-left: 11px;
+    margin-top: 10px;
+    border:solid 4px black;
+    background: yellow; 
+    float: left;
+    font-size: 60px;
+    padding:10px;
+    text-align: center;  
+}
+
+.letter {
+    margin-top: 10px;
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.ac {
+    background: red !important;
+    color: blue;
+}
+
+.high {
+    background: orange;
+}
+
+.counter {
+    margin-left: 60px;
+    height: 24px;
+    width: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: black;
+    color: white;
+    border:solid 1px black;
+}
+
+
+.frequency {
+    width: 80px;
+    background: black;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-left: 0;
+}
+
+.objects {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 60%;
+    left: 0;
+    background: gainsboro;
+
+}
+
+
+#sprache {
+    position: absolute;
+    top: 52%;
+    left: 1%;
+    font-size: 40px;
+}
+
+
+.newtext {
+    position: absolute;
+    bottom: 41%;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 60px;
+    font-weight: 800;
+    color: gainsboro;
+}
+
+.newtext:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+.nova {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 20%;
+    z-index: 20;
+    border: none;
+    font-size: 30px;
+    background: gainsboro;
+    padding: 10px;
+    box-shadow: 2px 2px 10px darkslategray;
+    display: none;
+}
+
+
+.lang {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.lang:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+.clean {
+    opacity: 0.3;
+    position: absolute;
+    left: 10px;
+    top: 160px;
+}
+
+.clean img {
+    width: 30px;
+    height: auto;
+}
+
+.clean:hover{
+    opacity: 0.5;
+}
+
+.cleaner {
+    opacity: 1;
+}
+
+
+.selected {
+    color: magenta;
+    font-weight: 900;
+}
+
