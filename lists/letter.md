@@ -18,7 +18,7 @@ Die  Frequenz kennen wir noch nicht, deshalb setzen wir sie erst einmal auf Null
 Das Buchstabenzählen selbst ist kein großer Akt. Dazu brauchen wir lediglich eine simple Schleife, die folgendermaßen aussieht:
 
 ```javascript
-for ( var i = 0; i < text.lengt; i++) {
+for ( var i = 0; i < text.length; i++) {
     char = text[i];
 } 
 ```
@@ -48,7 +48,7 @@ Unsere Funktion will einen Buchstaben überprüfen, also müssen wir dem "Schlit
     function count_chars ( char ) {
         var found = false; // 
         for (var n = 0; n < list.length; n++)
-           var obj = list[i];
+           var obj = list[n];
            if ( obj.char === char) {
                 obj.index ++;
                 found = true;
