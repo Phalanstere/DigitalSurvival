@@ -23,6 +23,7 @@ function Programming( text, raw, lang ) {
             t = text.replace(/\s/g, "").toLowerCase();
             t = t.replace(/[.,\/#"!$%\^&\*;:{}=\-_?'`~()]/g,"");
             t = t.replace(/\d/g,'');
+
         }
 
 

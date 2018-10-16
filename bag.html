@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Bag of Words</title>
+    <link rel="stylesheet" type="text/css" href="bag_of_words/bag.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+
+    <script type="text/javascript" language="javascript" src="bag_of_words/philosophie.js"></script> 
+    <script type="text/javascript" src="bag_of_words/wordcloud.js"></script>    
+    <script type="text/javascript" src="bag_of_words/bag.js"></script>
+
+
+
+  </head>
+  <body onload = "readTextFile('philosophie')">
+      <div id = "textfield"><img src = "bag_of_words/cover.jpg"/></div>      
+      <textarea id = "question" rows="1" cols="50">search</textarea>
+      <div id = "wordcloud"></div>
+  </body>
+</html>

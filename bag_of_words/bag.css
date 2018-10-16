@@ -1,0 +1,305 @@
+#nova
+{
+   font-size: 12px;
+   color: darkslategrey; 
+   width: 600px;
+   border: none;
+   background: pink;
+   height: 90%;
+}
+
+#textfield {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    height: 70%;
+    width: 28%;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Calibri;
+    padding: 10px;
+    color: darkslategrey; 
+    width: 600px;
+    border: none;
+    background: gainsboro;
+    box-shadow: 2px 2px 10px darkgray;
+    overflow-y: scroll;
+
+}
+
+#extfield img {
+    height: 500px;
+    width: auto;
+}
+
+
+
+#question {
+    position: absolute;
+    padding: 10px;
+    left: 2%;
+    width: 28%;
+    top: 1%;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: darkslategrey; 
+    width: 600px;
+    border: none;
+    background: ivory;
+    box-shadow: 2px 2px 10px darkgray;
+}
+
+
+#wordcloud {
+    position: absolute;
+    left: 42%;
+    width: 55%;
+    top: 3%;
+    height: 94%;
+    background: rgba(0,0,0, 0.05);
+    box-shadow: 2px 2px 10px darkgray;
+    overflow: hidden;
+}
+
+.wordcloudItem {
+    position: absolute;
+    left: -30%;
+    top: 10%;
+    font-family: 'Oswald';
+}
+
+
+#background {
+    position: absolute;
+    left: 90%;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+
+
+#lev_title {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 30px;
+    font-family: Oswald;
+}
+
+
+
+.lev_item {
+    height: 60px;
+    width: 1200px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.lev_item:hover {
+    cursor: pointer;
+}
+
+.lev_word {
+    width: 32px;
+    height: 32px;
+    background: gold;
+    box-shadow: 0 0 5px darkslategray;
+    color: black;
+    font-family: Calibri;
+    border:solid 5px black;
+    font-size: 26px;
+    padding: 8px;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.Levenshtein {
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 28%;
+    left: 20%;
+    z-index: 5;
+}
+
+.LevDist {
+    position: absolute;
+    top: 33%;
+    left: 13%;
+    background: pink;
+    padding: 8px;
+    font-size: 32px;
+    color: darkslategray;
+    cursor: pointer;
+}
+
+.LevDist:hover{
+    background: red;
+}
+
+
+#Demo {
+    outline:none;
+    background: gainsboro;
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    font-size: 24px;
+    padding: 6px;
+    padding-left: 12px;
+    border: none;
+    box-shadow: 0 0 2px darkslategray;
+    font-family: Oswald;
+    index: 5;
+}
+
+#wordlist {
+    position: absolute;
+    left: 40%;
+    width: 30%;
+    height: 28%;
+    bottom: 15%;
+    font-size: 12px;
+    padding: 6px;
+    padding-left: 12px;
+    border: none;
+    box-shadow: 0 0 2px darkslategray;
+    font-family: monospace;
+    overflow: hidden;
+    index: 10;
+}
+
+
+.word {
+    color: darkslategrey;
+    font-size: 14px;
+}
+
+.word:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+.product-line {
+    position: absolute;
+    left: 3%;
+    width: 96%;
+    top: 16%;
+    height: 96%;
+    background: white;
+}
+
+
+.recommendations {
+    position: absolute;
+    right: 3%;
+    width: 200px;
+    top: 15%;
+    height: 82%;
+    background: white;
+}
+
+.markow {
+    position: absolute;
+    left: 12%;
+    top: 35%;
+    height: 60%;
+}
+
+
+.markow img {
+    height: 100%;
+    width: auto;
+}
+
+.activeDiv {
+    background: pink;
+    border:solid 6px red;
+}
+
+.activeDiv img {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.product {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.product:hover {
+    height: 70px;
+    width: 70px;
+    opacity: 1;
+    margin-right: 0px;
+}
+
+
+.product img {
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+    -webkit-transition: width 0.5s height 3.5s ease-in-out;
+    -moz-transition: width 0.5s height 0.5s ease-in-out;
+    transition: width 0.5s height 0.5s ease-in-out;
+}
+
+
+.product img:hover {
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+.linker {
+    width: 120px;
+    height: 20px;
+    margin-top: 120px;
+    color: gray;
+    background: ivory;
+    text-align: center;
+    padding: 6px;
+    box-shadow: 0 0 5px black;
+    font-family: monospace;
+    border:none;
+}
+
+.linker:hover {
+    background: darkcyan;
+    color:white;
+    cursor: pointer;
+}
+
+.activeLinker {
+    border:solid 6px red;
+
+}
+
+
+
+.recom {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.recom img {
+    width: 100%;
+    height: 100%;
+
+
+    -webkit-transition: width 0.5s height 3.5s ease-in-out;
+    -moz-transition: width 0.5s height 0.5s ease-in-out;
+    transition: width 0.5s height 0.5s ease-in-out;
+}
